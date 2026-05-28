@@ -5,25 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Market Strategy Dashboards</title>
   <style>
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f6f3ec;color:#17202a;line-height:1.5}
-    main{max-width:960px;margin:0 auto;padding:48px 24px}
-    h1{font-size:42px;margin:0 0 12px} p{color:#5b6673;font-size:17px}.card{background:#fffdf8;border:1px solid #d8d0bf;border-top:6px solid #c39a4d;border-radius:6px;padding:24px;margin-top:22px}
-    a.button{display:inline-block;margin-top:14px;background:#183846;color:white;text-decoration:none;padding:12px 16px;border-radius:6px;font-weight:700}
-    code{background:#fffdf8;border:1px solid #d8d0bf;padding:2px 5px;border-radius:4px}
+    :root{--ink:#102331;--muted:#5b6673;--line:#d8d0bf;--paper:#fffdf8;--bg:#f6f3ec;--navy:#183846;--gold:#b7893e}
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+    main{max-width:1120px;margin:0 auto;padding:42px 24px 56px}
+    h1{font-size:42px;line-height:1.05;margin:0 0 10px} h2{font-size:22px;margin:0 0 10px} p{color:var(--muted);font-size:16px;margin:0 0 14px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}.card{background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:6px;padding:22px;min-height:170px}
+    .primary{border-top-color:var(--navy)} a.button{display:inline-block;background:var(--navy);color:white;text-decoration:none;padding:11px 14px;border-radius:5px;font-weight:700} code{background:white;border:1px solid var(--line);padding:2px 5px;border-radius:4px}
+    .note{margin-top:24px;padding:16px 18px;border:1px solid var(--line);background:#fffaf0;border-radius:6px;color:var(--muted)}
+    @media (max-width:760px){h1{font-size:32px}.grid{grid-template-columns:1fr}main{padding:30px 16px 42px}}
   </style>
 </head>
 <body>
   <main>
     <h1>Market Strategy Dashboards</h1>
-    <p>Weekly cross-asset strategy dashboards for breadth, ETF rotation, rates, credit, regimes, and model allocation.</p>
-    <section class="card">
-      <h2>Latest Weekly Command Center</h2>
-      <p>Use this stable link in Substack. Each week, replace <code>weekly/latest/index.html</code> with the newest generated dashboard.</p>
-      <a class="button" href="weekly/latest/">Open Latest Dashboard</a>
+    <p>Stable weekly links for the four HTML dashboards used in the market strategy workflow. Replace the same four files after each weekly run and these URLs keep working.</p>
+
+    <section class="grid" aria-label="Dashboard links">
+      <article class="card primary">
+        <h2>Command Center</h2>
+        <p>Top-down synthesis across breadth, ETF rotation, rates, regimes, sector leadership, and allocation implications.</p>
+        <a class="button" href="Chief_Market_Strategist_Command_Center.html">Open Command Center</a>
+      </article>
+      <article class="card">
+        <h2>Breadth Dashboard</h2>
+        <p>Market breadth, sector participation, internal health, damage, and trend confirmation.</p>
+        <a class="button" href="Breadth_Dashboard.html">Open Breadth</a>
+      </article>
+      <article class="card">
+        <h2>ETF Macro Technicals</h2>
+        <p>Cross-asset ETF trends, relative strength, themes, sectors, credit, commodities, and international sleeves.</p>
+        <a class="button" href="etf_macro_technical_chartdeck.html">Open ETF Deck</a>
+      </article>
+      <article class="card">
+        <h2>Yield Curve</h2>
+        <p>Rates, curve shape, Fed-sensitive maturities, recession/expansion signals, and macro rate regime context.</p>
+        <a class="button" href="yield_curve_institutional_chartdeck.html">Open Rates Deck</a>
+      </article>
     </section>
-    <section class="card">
-      <h2>Archive</h2>
-      <p>Archived weekly copies can live under <code>weekly/archive/YYYY-MM-DD/</code>.</p>
+
+    <section class="note">
+      Weekly update files: <code>Chief_Market_Strategist_Command_Center.html</code>, <code>Breadth_Dashboard.html</code>, <code>etf_macro_technical_chartdeck.html</code>, and <code>yield_curve_institutional_chartdeck.html</code>.
     </section>
   </main>
 </body>
