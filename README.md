@@ -11,10 +11,6 @@ Public GitHub Pages home for the weekly market strategy HTML dashboards.
 - ETF Macro Technicals: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/etf_macro_technical_chartdeck.html`
 - Yield Curve: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/yield_curve_institutional_chartdeck.html`
 
-Legacy breadth link, now a redirect/hub:
-
-- `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/Breadth_Dashboard.html`
-
 ## Weekly Update Workflow
 
 1. Run the local dashboard scripts.
