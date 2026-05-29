@@ -6,23 +6,30 @@ Public GitHub Pages home for the weekly market strategy HTML dashboards.
 
 - Home: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/`
 - Command Center: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/Chief_Market_Strategist_Command_Center.html`
-- Breadth Dashboard: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/Breadth_Dashboard.html`
+- Breadth Overview: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/Breadth_Dashboard_Overview.html`
+- Breadth Individual Charts: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/Breadth_Dashboard_Individual_Charts.html`
 - ETF Macro Technicals: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/etf_macro_technical_chartdeck.html`
 - Yield Curve: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/yield_curve_institutional_chartdeck.html`
 
+Legacy breadth link, now a redirect/hub:
+
+- `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/Breadth_Dashboard.html`
+
 ## Weekly Update Workflow
 
-1. Run the four local dashboard scripts.
+1. Run the local dashboard scripts.
 2. Confirm the output files have these exact names:
    - `Chief_Market_Strategist_Command_Center.html`
-   - `Breadth_Dashboard.html`
+   - `Breadth_Dashboard_Overview.html`
+   - `Breadth_Dashboard_Individual_Charts.html`
    - `etf_macro_technical_chartdeck.html`
    - `yield_curve_institutional_chartdeck.html`
-3. Open the GitHub repository in the browser.
-4. Use **Add file -> Upload files**.
-5. Drag the four HTML files into the repo root.
-6. Commit directly to `main`.
-7. Give GitHub Pages a minute or two to refresh.
+3. If the breadth dashboard has an assets folder, upload that folder too and keep the folder name/path exactly as the HTML expects.
+4. Open the GitHub repository in the browser.
+5. Use **Add file -> Upload files**.
+6. Drag the five HTML files, plus any required assets folder, into the repo root.
+7. Commit directly to `main`.
+8. Give GitHub Pages a minute or two to refresh.
 
 Because the filenames stay the same, Substack links do not need to change each week.
 
