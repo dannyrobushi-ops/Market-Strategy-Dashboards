@@ -11,6 +11,7 @@ Public GitHub Pages home for the weekly market strategy HTML dashboards.
 - ETF Macro Technicals: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/etf_macro_technical_chartdeck.html`
 - Yield Curve: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/yield_curve_institutional_chartdeck.html`
 - Volatility Adjusted Momentum Signal (VAMS): `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/VAMS_Signal_Chartdeck.html`
+- CFTC Positioning: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/CFTC_Positioning_Institutional_Chartdeck.html`
 
 The homepage buttons include a weekly `?v=YYYYMMDD` cache-buster so readers click through to the newest uploaded files instead of a stale browser cache.
 
@@ -24,12 +25,13 @@ The homepage buttons include a weekly `?v=YYYYMMDD` cache-buster so readers clic
    - `etf_macro_technical_chartdeck.html`
    - `yield_curve_institutional_chartdeck.html`
    - `VAMS_Signal_Chartdeck.html`
+   - `CFTC_Positioning_Institutional_Chartdeck.html`
 3. If any dashboard has an assets folder, upload that folder too and keep the folder name/path exactly as the HTML expects.
 4. Open the GitHub repository in the browser.
 5. Use **Add file -> Upload files**.
-6. Drag the six HTML files, plus any required assets folders, into the repo root.
+6. Drag the seven HTML files, plus any required assets folders, into the repo root.
 7. Commit directly to `main`.
-8. If readers still see old content, edit `index.html` and update the `?v=YYYYMMDD` values in the six links to the current weekly date.
+8. If readers still see old content, edit `index.html` and update the `?v=YYYYMMDD` values in the seven links to the current weekly date.
 9. Give GitHub Pages a minute or two to refresh.
 
 Because the filenames stay the same, Substack links do not need to change each week.
@@ -40,4 +42,4 @@ Substack does not support dropping interactive HTML directly into an article. Us
 
 Best default link for posts:
 
-`https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/Chief_Market_Strategist_Command_Center.html`
+`https://dashboards.apexmacroresearch.com/Chief_Market_Strategist_Command_Center.html`
