@@ -8,8 +8,9 @@
     :root{--ink:#102331;--muted:#5b6673;--line:#d8d0bf;--paper:#fffdf8;--bg:#f6f3ec;--navy:#183846;--gold:#b7893e}
     *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
     main{max-width:1160px;margin:0 auto;padding:42px 24px 56px}
-    h1{font-size:42px;line-height:1.05;margin:0 0 10px} h2{font-size:22px;margin:0 0 10px} p{color:var(--muted);font-size:16px;margin:0 0 14px}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}.card{background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:6px;padding:22px;min-height:170px}
+    h1{font-size:42px;line-height:1.05;margin:0 0 18px} h2{font-size:22px;margin:0 0 10px} p{color:var(--muted);font-size:16px;margin:0 0 14px}
+    .section-title{margin:28px 0 12px;padding-bottom:8px;border-bottom:3px solid var(--gold);color:var(--navy);font-size:18px;text-transform:uppercase;letter-spacing:.06em}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:12px}.card{background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:6px;padding:22px;min-height:170px}
     .primary{border-top-color:var(--navy);grid-column:1/-1}.primary p{max-width:850px} a.button{display:inline-block;background:var(--navy);color:white;text-decoration:none;padding:11px 14px;border-radius:5px;font-weight:700}
     @media (max-width:760px){h1{font-size:32px}.grid{grid-template-columns:1fr}.primary{grid-column:auto}main{padding:30px 16px 42px}}
   </style>
@@ -18,10 +19,11 @@
   <main>
     <h1>Apex Macro Research Dashboards</h1>
 
-    <section class="grid" aria-label="Dashboard links">
+    <h2 class="section-title">Technicals</h2>
+    <section class="grid" aria-label="Technical dashboard links">
       <article class="card primary">
         <h2>Command Center</h2>
-        <p>Top-down synthesis across breadth, ETF rotation, rates, regimes, sector leadership, positioning, and allocation implications.</p>
+        <p>Top-down synthesis across breadth, ETF rotation, rates, regimes, sector leadership, positioning, labor, and allocation implications.</p>
         <a class="button" href="Chief_Market_Strategist_Command_Center.html?v=20260529">Open Command Center</a>
       </article>
       <article class="card">
@@ -39,6 +41,10 @@
         <p>Cross-asset ETF trends, relative strength, themes, sectors, credit, commodities, and international sleeves.</p>
         <a class="button" href="etf_macro_technical_chartdeck.html?v=20260529">Open ETF Deck</a>
       </article>
+    </section>
+
+    <h2 class="section-title">Macro</h2>
+    <section class="grid" aria-label="Macro dashboard links">
       <article class="card">
         <h2>Yield Curve</h2>
         <p>Rates, curve shape, Fed-sensitive maturities, recession/expansion signals, and macro rate regime context.</p>
@@ -53,6 +59,11 @@
         <h2>CFTC Positioning</h2>
         <p>Futures positioning, trader category behavior, FX, energy, metals, crypto, volatility, and 2Y/5Y/10Y Treasury crowding for weekly macro risk review.</p>
         <a class="button" href="CFTC_Positioning_Institutional_Chartdeck.html?v=20260529">Open Positioning Deck</a>
+      </article>
+      <article class="card">
+        <h2>Labor Market</h2>
+        <p>Employment, unemployment, claims, wage pressure, and labor-cycle context for assessing growth risk, Fed sensitivity, and macro regime shifts.</p>
+        <a class="button" href="Labor_Market_Overview_Chartdeck.html?v=20260529">Open Labor Deck</a>
       </article>
     </section>
   </main>
