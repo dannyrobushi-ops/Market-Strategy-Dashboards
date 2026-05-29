@@ -11,6 +11,8 @@ Public GitHub Pages home for the weekly market strategy HTML dashboards.
 - ETF Macro Technicals: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/etf_macro_technical_chartdeck.html`
 - Yield Curve: `https://dannyrobushi-ops.github.io/Market-Strategy-Dashboards/yield_curve_institutional_chartdeck.html`
 
+The homepage buttons include a weekly `?v=YYYYMMDD` cache-buster so readers click through to the newest uploaded files instead of a stale browser cache.
+
 ## Weekly Update Workflow
 
 1. Run the local dashboard scripts.
@@ -25,7 +27,8 @@ Public GitHub Pages home for the weekly market strategy HTML dashboards.
 5. Use **Add file -> Upload files**.
 6. Drag the five HTML files, plus any required assets folder, into the repo root.
 7. Commit directly to `main`.
-8. Give GitHub Pages a minute or two to refresh.
+8. If readers still see old content, edit `index.html` and update the `?v=YYYYMMDD` values in the five links to the current weekly date.
+9. Give GitHub Pages a minute or two to refresh.
 
 Because the filenames stay the same, Substack links do not need to change each week.
 
