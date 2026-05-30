@@ -5,53 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Apex Macro Research Dashboards</title>
   <style>
-    :root{--ink:#102331;--muted:#5b6673;--line:#d8d0bf;--paper:#fffdf8;--bg:#f6f3ec;--navy:#183846;--gold:#b7893e}
-    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
-    main{max-width:1160px;margin:0 auto;padding:42px 24px 56px}
-    h1{font-size:42px;line-height:1.05;margin:0 0 18px} h2{font-size:22px;margin:0 0 10px} p{color:var(--muted);font-size:16px;margin:0 0 14px}
-    .section-title{margin:28px 0 12px;color:var(--ink);font-size:34px;line-height:1.05;font-weight:700;letter-spacing:0}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:12px}.card{background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:6px;padding:22px;min-height:170px}
-    .primary{border-top-color:var(--navy);grid-column:1/-1}.primary p{max-width:850px} a.button{display:inline-block;background:var(--navy);color:white;text-decoration:none;padding:11px 14px;border-radius:5px;font-weight:700}
-    @media (max-width:760px){h1{font-size:32px}.section-title{font-size:28px}.grid{grid-template-columns:1fr}.primary{grid-column:auto}main{padding:30px 16px 42px}}
+    :root{
+      --bg:#081118;--panel:#0e1a23;--panel-2:#111f2a;--ink:#eef4f6;--muted:#9fb0bb;
+      --line:#263945;--line-soft:#1b2b35;--accent:#c59b4a;--blue:#61b6d9;--green:#5fb98c;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,black,rgba(0,0,0,.72),transparent)}
+    main{position:relative;max-width:1180px;margin:0 auto;padding:42px 24px 64px}
+    .masthead{border:1px solid var(--line);border-top:5px solid var(--accent);background:linear-gradient(180deg,#10202b 0%,#0b151d 100%);border-radius:8px;padding:28px 30px;margin-bottom:28px}
+    .eyebrow{margin:0 0 10px;color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+    h1{font-size:44px;line-height:1.02;margin:0 0 12px;letter-spacing:0}
+    .dek{max-width:880px;color:var(--muted);font-size:17px;margin:0}
+    .status{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:22px}
+    .status div{border:1px solid var(--line-soft);background:#0b1720;border-radius:6px;padding:12px 14px;min-height:72px}
+    .status span{display:block;color:var(--muted);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}.status b{display:block;margin-top:5px;font-size:18px;color:var(--ink)}
+    .section-title{margin:30px 0 12px;color:var(--ink);font-size:32px;line-height:1.05;font-weight:700;letter-spacing:0}
+    .section-title:after{content:"";display:block;width:72px;height:3px;background:var(--accent);margin-top:10px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:12px}.card{position:relative;background:linear-gradient(180deg,var(--panel) 0%,#0b151d 100%);border:1px solid var(--line);border-radius:8px;padding:22px;min-height:178px;overflow:hidden}
+    .card:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--blue))}.card.primary{grid-column:1/-1;background:linear-gradient(180deg,#132631 0%,#0c161e 100%)}
+    .card h2{position:relative;margin:0 0 9px;font-size:22px;line-height:1.15}.card p{position:relative;color:var(--muted);font-size:15.5px;margin:0 0 16px;max-width:850px}
+    a.button{position:relative;display:inline-block;background:#d2a652;color:#071016;text-decoration:none;padding:10px 13px;border-radius:5px;font-weight:800;font-size:14px;border:1px solid #e1bf74}
+    a.button:hover{background:#e1bf74}.tag{display:inline-block;margin:0 0 12px;color:#9ed3e8;border:1px solid #244353;background:#0a1a24;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+    @media (max-width:760px){main{padding:26px 14px 44px}.masthead{padding:22px 18px}h1{font-size:34px}.section-title{font-size:27px}.grid,.status{grid-template-columns:1fr}.card.primary{grid-column:auto}}
   </style>
 </head>
 <body>
   <main>
-    <h1>Apex Macro Research Dashboards</h1>
+    <section class="masthead">
+      <p class="eyebrow">Apex Macro Research</p>
+      <h1>Institutional Market Dashboard Suite</h1>
+      <p class="dek">A weekly research terminal for market breadth, ETF leadership, rates, positioning, momentum, and labor-market regime work.</p>
+      <div class="status" aria-label="Research coverage">
+        <div><span>Workflow</span><b>Top-down</b></div>
+        <div><span>Frequency</span><b>Weekly</b></div>
+        <div><span>Coverage</span><b>Cross-asset</b></div>
+        <div><span>Use case</span><b>Strategy</b></div>
+      </div>
+    </section>
 
     <h2 class="section-title">Technicals</h2>
     <section class="grid" aria-label="Technical dashboard links">
       <article class="card primary">
+        <span class="tag">Strategy Hub</span>
         <h2>Command Center</h2>
         <p>Top-down synthesis across breadth, ETF rotation, rates, regimes, sector leadership, positioning, labor, and allocation implications.</p>
         <a class="button" href="Chief_Market_Strategist_Command_Center.html?v=20260529">Open Command Center</a>
       </article>
       <article class="card">
+        <span class="tag">Breadth</span>
         <h2>Breadth Overview</h2>
         <p>Market breadth overview, sector participation, internal health, damage, and trend confirmation.</p>
         <a class="button" href="Breadth_Dashboard_Overview.html?v=20260529">Open Breadth Overview</a>
       </article>
       <article class="card">
+        <span class="tag">Breadth</span>
         <h2>Breadth Individual Charts</h2>
         <p>The expanded individual ETF breadth chart book, split out from the overview file for easier weekly publishing.</p>
         <a class="button" href="Breadth_Dashboard_Individual_Charts.html?v=20260529">Open Individual Charts</a>
       </article>
       <article class="card">
+        <span class="tag">ETF Map</span>
         <h2>ETF Macro Technicals</h2>
         <p>Cross-asset ETF trends, relative strength, themes, sectors, credit, commodities, and international sleeves.</p>
         <a class="button" href="etf_macro_technical_chartdeck.html?v=20260529">Open ETF Deck</a>
       </article>
       <article class="card">
+        <span class="tag">Rates</span>
         <h2>Yield Curve</h2>
         <p>Rates, curve shape, Fed-sensitive maturities, recession/expansion signals, and macro rate regime context.</p>
         <a class="button" href="yield_curve_institutional_chartdeck.html?v=20260529">Open Rates Deck</a>
       </article>
       <article class="card">
+        <span class="tag">Momentum</span>
         <h2>Volatility Adjusted Momentum Signal (VAMS)</h2>
         <p>Risk-adjusted momentum signal deck for tracking trend quality, volatility regime shifts, and momentum confirmation across markets.</p>
         <a class="button" href="VAMS_Signal_Chartdeck.html?v=20260529">Open VAMS Deck</a>
       </article>
       <article class="card">
+        <span class="tag">Positioning</span>
         <h2>CFTC Positioning</h2>
         <p>Futures positioning, trader category behavior, FX, energy, metals, crypto, volatility, and 2Y/5Y/10Y Treasury crowding for weekly macro risk review.</p>
         <a class="button" href="CFTC_Positioning_Institutional_Chartdeck.html?v=20260529">Open Positioning Deck</a>
@@ -61,6 +93,7 @@
     <h2 class="section-title">Macro</h2>
     <section class="grid" aria-label="Macro dashboard links">
       <article class="card">
+        <span class="tag">Labor Cycle</span>
         <h2>Labor Market</h2>
         <p>Employment, unemployment, claims, wage pressure, and labor-cycle context for assessing growth risk, Fed sensitivity, and macro regime shifts.</p>
         <a class="button" href="Labor_Market_Overview_Chartdeck.html?v=20260529">Open Labor Deck</a>
