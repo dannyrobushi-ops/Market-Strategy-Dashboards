@@ -1,172 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apex Macro Research Dashboards</title>
-<style>
-:root{
-  --bg:#d7c5a4;
-  --panel:#fff7eb;
-  --ink:#102430;
-  --muted:#5f6770;
-  --line:#c8b38e;
-  --line-soft:#dfcfb1;
-  --accent:#b9873d;
-  --blue:#1f5b68;
-  --green:#347856;
-  --shadow:0 20px 55px rgba(83,60,30,.18);
-}
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  background:
-    radial-gradient(ellipse at 74% -12%,rgba(255,250,240,.42),transparent 38%),
-    radial-gradient(ellipse at 90% 4%,rgba(190,145,70,.32),transparent 34%),
-    linear-gradient(135deg,#e5d8c0 0%,#d4bf9a 52%,#c3a16a 100%);
-  color:var(--ink);
-  line-height:1.5;
-  min-height:100vh;
-}
-body:before{
-  content:"";
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  background-image:
-    linear-gradient(rgba(16,36,48,.075) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(16,36,48,.075) 1px,transparent 1px),
-    linear-gradient(rgba(185,135,61,.082) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(185,135,61,.082) 1px,transparent 1px);
-  background-size:24px 24px,24px 24px,120px 120px,120px 120px;
-  mask-image:linear-gradient(90deg,rgba(0,0,0,.34),rgba(0,0,0,.8),rgba(0,0,0,.34));
-}
-body:after{
-  content:"";
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  background:
-    linear-gradient(105deg,transparent 0%,rgba(255,255,255,.10) 43%,rgba(255,255,255,.34) 48%,rgba(255,255,255,.09) 52%,transparent 78%),
-    radial-gradient(circle at 100% 28%,rgba(31,91,104,.11),transparent 18%),
-    radial-gradient(circle at 6% 12%,rgba(185,135,61,.17),transparent 20%);
-  mix-blend-mode:soft-light;
-}
-.wrap{max-width:1180px;margin:0 auto;padding:20px;position:relative;z-index:1;overflow:hidden}
-.topbar{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:16px;padding:10px 12px;border:1px solid rgba(200,179,142,.72);border-radius:7px;background:rgba(255,250,240,.62);box-shadow:inset 0 1px 0 rgba(255,255,255,.55);font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#6f7678;backdrop-filter:blur(8px)}
-.topbar span{color:#4f8590}
-.masthead{position:relative;overflow:hidden;margin:0 0 16px;padding:28px 30px;border:1px solid rgba(200,179,142,.84);border-top:5px solid var(--accent);border-radius:8px;background:linear-gradient(115deg,rgba(255,250,240,.90),rgba(245,232,207,.78),rgba(214,186,135,.58));box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.76)}
-.masthead:before{content:"";position:absolute;right:-80px;top:-120px;width:310px;height:310px;border:1px solid rgba(185,135,61,.35);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.28),rgba(185,135,61,.10),transparent 64%)}
-.eyebrow{margin:0 0 6px;color:var(--accent);font-size:12px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}
-h1{margin:0;font-size:44px;line-height:1.08;letter-spacing:0;color:#263846}
-.lede{max-width:880px;margin:12px 0 0;color:#6c7680;font-size:17px}
-.status-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:24px}.status{padding:12px 14px;border:1px solid rgba(200,179,142,.78);border-radius:6px;background:rgba(255,250,240,.66);box-shadow:inset 0 1px 0 rgba(255,255,255,.58)}
-.status small{display:block;color:#747b81;font-size:11px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}.status strong{display:block;margin-top:4px;font-size:18px;color:var(--ink)}
-.signal-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:16px 0 28px}.flow-card{padding:12px 14px;border:1px solid rgba(200,179,142,.74);border-radius:7px;background:rgba(255,250,240,.62);box-shadow:inset 0 1px 0 rgba(255,255,255,.54)}
-.flow-card b{display:block;color:var(--accent);font-size:12px;letter-spacing:.12em;text-transform:uppercase}.flow-card span{display:block;margin-top:4px;font-weight:900}.flow-card small{display:block;margin-top:2px;color:var(--muted)}
-.research-strip{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 28px;padding:15px 18px;border:1px solid rgba(174,143,91,.82);border-left:5px solid var(--blue);border-radius:8px;background:linear-gradient(120deg,rgba(255,250,240,.76),rgba(228,207,171,.72),rgba(31,91,104,.12));box-shadow:0 16px 38px rgba(82,59,28,.17),inset 0 1px 0 rgba(255,255,255,.58)}
-.research-strip p{margin:0;color:var(--muted);font-size:13px;font-weight:900;letter-spacing:.07em;text-transform:uppercase}.research-strip strong{color:var(--ink)}
-.research-strip a{color:#123846;text-decoration:none;font-weight:900;font-size:16px;border-bottom:2px solid rgba(185,135,61,.55)}.research-strip a:hover{color:var(--blue);border-bottom-color:var(--blue)}
-.section-title{margin:28px 0 12px;padding:8px 16px;border-left:5px solid var(--accent);border-radius:6px;background:linear-gradient(90deg,rgba(255,250,240,.54),rgba(31,91,104,.10));font-size:30px;line-height:1.25;letter-spacing:0;color:#233746}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.card{position:relative;display:grid;grid-template-columns:1fr auto;gap:18px;min-height:210px;padding:25px;border:1px solid rgba(200,179,142,.88);border-top:4px solid var(--blue);border-radius:8px;background:linear-gradient(135deg,rgba(255,250,240,.86),rgba(243,231,210,.74));box-shadow:0 16px 42px rgba(77,58,31,.15),inset 0 1px 0 rgba(255,255,255,.68);overflow:hidden}.card:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent,rgba(255,255,255,.36),transparent);transform:translateX(-120%);transition:transform .8s ease}.card:hover:before{transform:translateX(120%)}
-.card h2{margin:0 0 8px;font-size:23px;line-height:1.15;letter-spacing:0}.card p{margin:0;color:var(--muted);font-size:16px}.card a{position:relative;z-index:1;align-self:end;justify-self:start;display:inline-block;margin-top:18px;padding:10px 15px;border-radius:5px;background:linear-gradient(135deg,var(--blue),#123846);color:#fff;text-decoration:none;font-weight:900;box-shadow:0 10px 22px rgba(31,91,104,.24)}.card a:hover{filter:brightness(1.08)}
-.card-aside{position:relative;z-index:1;display:flex;flex-direction:column;gap:10px;min-width:128px}.metric{padding:10px 12px;border:1px solid rgba(200,179,142,.74);border-radius:6px;background:rgba(255,250,240,.65)}.metric small{display:block;color:#6f7678;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.metric b{display:block;margin-top:4px;color:var(--ink)}
-.badge{display:inline-block;margin:0 0 10px;padding:4px 10px;border:1px solid rgba(185,135,61,.50);border-radius:999px;background:rgba(255,250,240,.64);color:#1f5b68;font-size:11px;font-weight:900;letter-spacing:.10em;text-transform:uppercase}.macro .card{border-top-color:var(--accent)}.macro .card a{background:linear-gradient(135deg,var(--accent),#7d5a27)}
-footer{margin:32px 0 12px;color:#51616b;font-size:13px;text-align:center}.disclaimer{margin:0 0 18px;padding:18px;border:1px solid rgba(200,179,142,.88);border-radius:8px;background:rgba(255,250,240,.62);color:#53606a;font-size:12px;box-shadow:inset 0 1px 0 rgba(255,255,255,.58)}.disclaimer h3{margin:0 0 8px;color:#233746;font-size:14px}.disclaimer p{margin:0 0 10px}.disclaimer p:last-child{margin-bottom:0}
-@media(max-width:900px){.grid,.status-grid,.signal-flow{grid-template-columns:1fr 1fr}.card{grid-template-columns:1fr}.card-aside{flex-direction:row;flex-wrap:wrap}.metric{min-width:130px}}
-@media(max-width:760px){.wrap{padding:14px}.topbar{align-items:flex-start;flex-direction:column}.masthead{padding:22px 20px}h1{font-size:34px}.grid,.status-grid,.signal-flow{grid-template-columns:1fr}.section-title{font-size:27px}.research-strip{align-items:flex-start;flex-direction:column}.card{padding:21px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apex Macro Research Dashboards</title>
+  <style>
+    :root{--bg:#ded0b5;--panel:#fffaf0;--ink:#102430;--muted:#5f6770;--line:#c8b38e;--line-soft:#dcc9aa;--accent:#b9873d;--blue:#1f5b68;--green:#347856}
+    *{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(ellipse at 76% -10%,rgba(255,250,240,.46),transparent 38%),radial-gradient(ellipse at 84% 0%,rgba(199,153,76,.34),transparent 34%),linear-gradient(135deg,#e7dac3 0%,#d6c09a 50%,#c7a56d 100%);color:var(--ink);line-height:1.5;min-height:100vh}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(16,36,48,.068) 1px,transparent 1px),linear-gradient(90deg,rgba(16,36,48,.068) 1px,transparent 1px),linear-gradient(rgba(185,135,61,.078) 1px,transparent 1px),linear-gradient(90deg,rgba(185,135,61,.078) 1px,transparent 1px);background-size:42px 42px,42px 42px,210px 210px,210px 210px;mask-image:linear-gradient(to bottom,black,rgba(0,0,0,.74) 60%,rgba(0,0,0,.25));mix-blend-mode:multiply}
+    body:after{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(112deg,transparent 0%,rgba(255,255,255,.10) 18%,rgba(255,255,255,.04) 31%,transparent 46%),radial-gradient(circle at 18% 10%,rgba(31,91,104,.10),transparent 32%),radial-gradient(circle at 86% 6%,rgba(185,135,61,.18),transparent 31%),linear-gradient(180deg,rgba(255,250,240,.08),transparent 43%)}
+    main{position:relative;max-width:1180px;margin:0 auto;padding:22px 24px 38px}.topbar{display:flex;justify-content:space-between;gap:12px;align-items:center;border:1px solid rgba(208,192,164,.82);background:rgba(255,250,240,.78);backdrop-filter:blur(10px);border-radius:8px;padding:10px 12px;margin-bottom:16px;color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 12px 34px rgba(96,72,38,.14),inset 0 1px 0 rgba(255,255,255,.78)}.topbar span{color:var(--blue)}
+    .masthead{position:relative;border:1px solid rgba(174,143,91,.80);border-top:5px solid var(--accent);background:linear-gradient(132deg,rgba(255,253,248,.98) 0%,rgba(247,235,215,.94) 47%,rgba(224,198,153,.92) 100%);border-radius:8px;padding:30px;margin-bottom:16px;box-shadow:0 28px 82px rgba(96,72,38,.24),inset 0 1px 0 rgba(255,255,255,.86);overflow:hidden}.masthead:before{content:"";position:absolute;inset:0;background:linear-gradient(118deg,transparent 0%,rgba(255,255,255,.34) 20%,transparent 38%);pointer-events:none}.masthead:after{content:"";position:absolute;right:24px;top:24px;width:220px;height:220px;border:1px solid rgba(31,91,104,.22);box-shadow:0 0 44px rgba(31,91,104,.10);transform:rotate(28deg);border-radius:28px}.eyebrow{margin:0 0 10px;color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}h1{position:relative;font-size:44px;line-height:1.02;margin:0 0 12px;letter-spacing:0}.dek{position:relative;max-width:880px;color:var(--muted);font-size:17px;margin:0}
+    .status{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:22px}.status div{border:1px solid var(--line-soft);background:rgba(255,253,248,.76);border-radius:6px;padding:12px 14px;min-height:72px;box-shadow:inset 0 1px 0 rgba(255,255,255,.82)}.status span{display:block;color:var(--muted);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}.status b{display:block;margin-top:5px;font-size:18px;color:var(--ink)}
+    .signal-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:0 0 18px}.flow-step{border:1px solid rgba(208,192,164,.82);background:rgba(255,250,240,.76);backdrop-filter:blur(8px);border-radius:8px;padding:13px 14px;box-shadow:0 12px 30px rgba(96,72,38,.10),inset 0 1px 0 rgba(255,255,255,.74)}.flow-step span{display:block;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.flow-step b{display:block;margin-top:4px;color:var(--ink);font-size:15px}.flow-step small{display:block;margin-top:2px;color:var(--muted);font-size:12px}
+    .research-strip{display:flex;justify-content:space-between;gap:16px;align-items:center;margin:0 0 28px;padding:13px 15px;border:1px solid rgba(174,143,91,.82);border-left:5px solid var(--blue);border-radius:8px;background:linear-gradient(120deg,rgba(255,250,240,.78),rgba(231,211,178,.72),rgba(31,91,104,.11));box-shadow:0 14px 34px rgba(96,72,38,.14),inset 0 1px 0 rgba(255,255,255,.70)}.research-strip p{margin:0;color:var(--muted);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.research-strip strong{color:var(--ink)}.research-strip a{color:#123846;text-decoration:none;font-size:14px;font-weight:800;border-bottom:2px solid rgba(185,135,61,.55)}.research-strip a:hover{color:var(--blue);border-bottom-color:var(--blue)}
+    .section-band{margin:30px 0 12px;padding:13px 16px;border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:8px;background:linear-gradient(90deg,rgba(185,135,61,.24),rgba(31,91,104,.10),rgba(255,255,255,.22));box-shadow:inset 0 1px 0 rgba(255,255,255,.55)}.section-title{margin:0;color:var(--ink);font-size:30px;line-height:1.05;font-weight:700;letter-spacing:0}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:12px}.card{position:relative;background:linear-gradient(180deg,rgba(255,250,240,.98) 0%,rgba(246,237,221,.96) 100%);border:1px solid rgba(208,192,164,.92);border-radius:8px;padding:22px;min-height:178px;overflow:hidden;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}.card:hover{transform:translateY(-3px);border-color:#9a855e;box-shadow:0 20px 54px rgba(96,72,38,.22),inset 0 1px 0 rgba(255,255,255,.78)}.card:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--blue))}.card:after{content:attr(data-module);position:absolute;right:18px;top:16px;color:rgba(16,36,48,.08);font-size:40px;font-weight:800;line-height:1}.card.primary{grid-column:1/-1;background:linear-gradient(132deg,rgba(255,253,248,.98) 0%,rgba(242,229,207,.96) 58%,rgba(233,215,184,.95) 100%);padding:26px}.card.primary:after{font-size:66px;right:22px;top:16px}.primary-inner{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:20px;align-items:center}.matrix{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.matrix div{border:1px solid var(--line-soft);background:rgba(255,253,248,.78);border-radius:6px;padding:11px}.matrix span{display:block;color:var(--muted);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}.matrix b{display:block;margin-top:4px;color:var(--ink);font-size:15px}
+    .card h2{position:relative;margin:0 0 9px;font-size:22px;line-height:1.15}.card p{position:relative;color:var(--muted);font-size:15.5px;margin:0 0 16px;max-width:850px}a.button{position:relative;display:inline-block;background:#123846;color:#fffaf0;text-decoration:none;padding:10px 13px;border-radius:5px;font-weight:800;font-size:14px;border:1px solid #1f5b68;box-shadow:0 10px 22px rgba(18,56,70,.16),inset 0 1px 0 rgba(255,255,255,.15)}a.button:hover{background:#1f5b68}.tag{position:relative;display:inline-block;margin:0 0 12px;color:#1f5b68;border:1px solid #d3c2a4;background:#fff7e8;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+    footer{position:relative;margin-top:34px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;letter-spacing:.04em;text-transform:uppercase}.disclaimer{position:relative;margin-top:14px;border:1px solid var(--line-soft);background:rgba(255,250,240,.78);border-radius:8px;padding:16px 18px;color:#6d716d;font-size:11px;line-height:1.55}.disclaimer h2{margin:0 0 8px;color:#102430;font-size:12px;text-transform:uppercase;letter-spacing:.08em}.disclaimer p{margin:0 0 10px}.disclaimer p:last-child{margin-bottom:0}
+    @media(max-width:760px){main{padding:16px 14px 34px}.topbar{align-items:flex-start;flex-direction:column}.masthead{padding:22px 18px}h1{font-size:34px}.section-title{font-size:26px}.grid,.status,.primary-inner,.signal-flow{grid-template-columns:1fr}.card.primary{grid-column:auto}.matrix{grid-template-columns:1fr}.research-strip{align-items:flex-start;flex-direction:column}}
+  </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="topbar"><div><span>APEX MACRO RESEARCH</span> | WEEKLY DASHBOARD SUITE</div><div>TECHNICALS | MACRO | STRATEGY</div></div>
-
-  <header class="masthead">
-    <p class="eyebrow">Apex Macro Research</p>
-    <h1>Institutional Market Dashboard Suite</h1>
-    <p class="lede">A weekly research terminal for market breadth, ETF leadership, rates, fiscal positioning, momentum, labor-market regime work, inflation pressure, consumer sentiment, and macro risk review.</p>
-    <div class="status-grid">
-      <div class="status"><small>Workflow</small><strong>Top-down</strong></div>
-      <div class="status"><small>Frequency</small><strong>Weekly</strong></div>
-      <div class="status"><small>Coverage</small><strong>Cross-asset</strong></div>
-      <div class="status"><small>Use Case</small><strong>Investment strategy</strong></div>
-    </div>
-  </header>
-
-  <div class="signal-flow">
-    <div class="flow-card"><b>01 Input</b><span>Market Internals</span><small>Breadth, trend, damage</small></div>
-    <div class="flow-card"><b>02 Context</b><span>Macro Regime</span><small>Rates, fiscal, labor, inflation</small></div>
-    <div class="flow-card"><b>03 Synthesis</b><span>Command Center</span><small>Cross-dashboard read</small></div>
-    <div class="flow-card"><b>04 Decision</b><span>Investment Playbook</span><small>Allocation implications</small></div>
-  </div>
-
-  <section class="research-strip" aria-label="Written research">
-    <p><strong>Written Research</strong> for Apex Macro can be found at:</p>
-    <a href="https://apexmacroresearch.substack.com" target="_blank" rel="noopener">apexmacroresearch.substack.com</a>
-  </section>
-
-  <h2 class="section-title">Technicals</h2>
-  <section class="grid">
-    <article class="card">
-      <div><span class="badge">Strategy Hub</span><h2>Command Center</h2><p>Top-down synthesis across breadth, ETF rotation, rates, regimes, sector leadership, positioning, labor, inflation, fiscal risk, and allocation implications.</p><a href="Chief_Market_Strategist_Command_Center.html?v=20260531">Open Command Center</a></div>
-      <div class="card-aside"><div class="metric"><small>Inputs</small><b>10 dashboards</b></div><div class="metric"><small>Lens</small><b>Cross-asset</b></div></div>
-    </article>
-    <article class="card">
-      <div><span class="badge">Breadth</span><h2>Breadth Dashboard Overview</h2><p>High-level participation dashboard tracking index, sector, industry, trend, damage, and health conditions across the market.</p><a href="Breadth_Dashboard_Overview.html?v=20260529">Open Breadth Overview</a></div>
-      <div class="card-aside"><div class="metric"><small>Signal</small><b>Participation</b></div><div class="metric"><small>Cadence</small><b>Weekly</b></div></div>
-    </article>
-    <article class="card">
-      <div><span class="badge">Breadth</span><h2>Breadth Dashboard Individual Charts</h2><p>An expanded look at the underlying ETF breadth metrics, participation trends, leadership shifts, and individual market internals driving the overview.</p><a href="Breadth_Dashboard_Individual_Charts.html?v=20260529">Open Individual Charts</a></div>
-      <div class="card-aside"><div class="metric"><small>Depth</small><b>ETF-level</b></div><div class="metric"><small>Use</small><b>Diagnostics</b></div></div>
-    </article>
-    <article class="card">
-      <div><span class="badge">ETF Rotation</span><h2>ETF Macro Technical Chartdeck</h2><p>ETF leadership, momentum, relative strength, sector/industry behavior, and cross-asset technical signals for top-down allocation work.</p><a href="etf_macro_technical_chartdeck.html?v=20260529">Open ETF Chartdeck</a></div>
-      <div class="card-aside"><div class="metric"><small>Universe</small><b>ETF groups</b></div><div class="metric"><small>Focus</small><b>Leadership</b></div></div>
-    </article>
-    <article class="card">
-      <div><span class="badge">Rates</span><h2>Yield Curve Institutional Chartdeck</h2><p>Yield curve structure, rate regime diagnostics, credit spread behavior, recession context, and risk-budget implications.</p><a href="yield_curve_institutional_chartdeck.html?v=20260529">Open Yield Curve Deck</a></div>
-      <div class="card-aside"><div class="metric"><small>Lens</small><b>Rates/Credit</b></div><div class="metric"><small>Use</small><b>Risk budget</b></div></div>
-    </article>
-    <article class="card">
-      <div><span class="badge">Momentum</span><h2>Volatility Adjusted Momentum Signal (VAMS)</h2><p>Volatility-adjusted buy and sell signal work for ETF momentum, trend confirmation, leadership persistence, and regime-aware risk allocation.</p><a href="VAMS_Signal_Chartdeck.html?v=20260529">Open VAMS Deck</a></div>
-      <div class="card-aside"><div class="metric"><small>Signal</small><b>Buy/Sell</b></div><div class="metric"><small>Style</small><b>Systematic</b></div></div>
-    </article>
-    <article class="card">
-      <div><span class="badge">Positioning</span><h2>CFTC Positioning</h2><p>Institutional positioning dashboard tracking crowding, speculative sponsorship, futures exposure, and positioning risk across major macro markets.</p><a href="CFTC_Positioning_Institutional_Chartdeck.html?v=20260529">Open CFTC Deck</a></div>
-      <div class="card-aside"><div class="metric"><small>Signal</small><b>Crowding</b></div><div class="metric"><small>Market</small><b>Futures</b></div></div>
-    </article>
-  </section>
-
-  <h2 class="section-title">Macro</h2>
-  <section class="grid macro">
-    <article class="card">
-      <div><span class="badge">Labor</span><h2>Labor Market</h2><p>Labor-market regime dashboard covering unemployment trends, cycle context, macro risk, and employment conditions for broader allocation decisions.</p><a href="Labor_Market_Overview_Chartdeck.html?v=20260529">Open Labor Market Deck</a></div>
-      <div class="card-aside"><div class="metric"><small>Theme</small><b>Growth risk</b></div><div class="metric"><small>Macro</small><b>Labor</b></div></div>
-    </article>
-    <article class="card">
-      <div><span class="badge">Inflation</span><h2>Inflation/Consumer Sentiment</h2><p>Inflation pressure, consumer sentiment, expectations, and purchasing-power context for macro regime assessment.</p><a href="Inflation_Overview_Chartdeck.html?v=20260531">Open Inflation Deck</a></div>
-      <div class="card-aside"><div class="metric"><small>Theme</small><b>Prices</b></div><div class="metric"><small>Macro</small><b>Sentiment</b></div></div>
-    </article>
-    <article class="card">
-      <div><span class="badge">Fiscal</span><h2>Fiscal Monitor</h2><p>Treasury issuance, fiscal balance, public debt, interest-cost pressure, and foreign demand for U.S. securities.</p><a href="Treasury_Fiscal_Positioning_Chartdeck.html?v=20260529">Open Fiscal Monitor</a></div>
-      <div class="card-aside"><div class="metric"><small>Theme</small><b>Supply</b></div><div class="metric"><small>Macro</small><b>Fiscal</b></div></div>
-    </article>
-    <article class="card">
-      <div><span class="badge">Small Business</span><h2>NFIB Sentiment</h2><p>Small-business confidence, hiring plans, capex intentions, price plans, and credit conditions for a ground-level macro read.</p><a href="NFIB_Sentiment_Chartdeck.html?v=20260602">Open NFIB Deck</a></div>
-      <div class="card-aside"><div class="metric"><small>Theme</small><b>Small business</b></div><div class="metric"><small>Macro</small><b>Sentiment</b></div></div>
-    </article>
-  </section>
-
-  <footer>Apex Macro Research | Weekly cross-asset strategy dashboard</footer>
-  <section class="disclaimer" aria-label="Disclaimer">
-    <h3>Disclaimer</h3>
-    <p>The information provided by Apex Macro LLC ("we," "us," or "our") on any platform, including but not limited to websites, reports, emails, newsletters, and presentations, is for general informational and educational purposes only. All information is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information.</p>
-    <p>None of the content offered by Apex Macro LLC constitutes financial advice, legal advice, or any other type of advice meant for your specific reliance for any purpose. Any use or reliance on our content is solely at your own risk and discretion. You should conduct your own research, review, analysis, and verification of our content before relying on them. Trading and investment in securities involves high risk and the possibility of losing some or all of the principal investment. It is crucial to seek advice from an independent financial advisor who is licensed to provide investment advice.</p>
-    <p>Our content is intended to be used and must be used for informational purposes only. It is very important to do your own analysis before making any investment based on your own personal circumstances. You should take independent financial advice from a professional in connection with, or independently research and verify, any information that you find on our platform and wish to rely upon, whether for the purpose of making an investment decision or otherwise.</p>
-    <p>This disclaimer has been created to expressly convey that Apex Macro LLC and its content creators are not providing financial advice through the dissemination of the information contained herein and are merely providing information and insights as a public service. Apex Macro LLC, its directors, employees, and agents will not be liable for any loss or damage of any nature arising in any way from the use of, or reliance on, the information provided or for any decision made on the basis of such information, including without limitation any loss of profit, business, contracts, revenues, or anticipated savings.</p>
-    <p><strong>Terms of Use:</strong> This document is the property of Apex Macro LLC and is intended solely for the use of the recipient. It contains confidential and proprietary information and may not be reproduced, redistributed, or disclosed in whole or in part to any third party without the prior written consent of Apex Macro LLC. By accessing this document, you acknowledge that you have read and understood these terms and agree to be bound by them.</p>
-  </section>
-</div>
+  <main>
+    <div class="topbar"><div><span>APEX MACRO RESEARCH</span> | WEEKLY DASHBOARD SUITE</div><div>TECHNICALS | MACRO | STRATEGY</div></div>
+    <section class="masthead">
+      <p class="eyebrow">Apex Macro Research</p><h1>Institutional Market Dashboard Suite</h1><p class="dek">A weekly research terminal for market breadth, ETF leadership, rates, fiscal positioning, momentum, labor-market regime work, inflation pressure, consumer sentiment, small-business sentiment, and macro risk review.</p>
+      <div class="status" aria-label="Research coverage"><div><span>Workflow</span><b>Top-down</b></div><div><span>Frequency</span><b>Weekly</b></div><div><span>Coverage</span><b>Cross-asset</b></div><div><span>Use case</span><b>Investment Strategy</b></div></div>
+    </section>
+    <section class="signal-flow" aria-label="Signal workflow"><div class="flow-step"><span>01 Input</span><b>Market Internals</b><small>Breadth, trend, damage</small></div><div class="flow-step"><span>02 Context</span><b>Macro Regime</b><small>Rates, fiscal, labor, inflation</small></div><div class="flow-step"><span>03 Synthesis</span><b>Command Center</b><small>Cross-dashboard read</small></div><div class="flow-step"><span>04 Output</span><b>Investment Strategy</b><small>Allocation implications</small></div></section>
+    <section class="research-strip" aria-label="Written research"><p><strong>Written Research</strong> for Apex Macro can be found at:</p><a href="https://apexmacroresearch.substack.com" target="_blank" rel="noopener">apexmacroresearch.substack.com</a></section>
+    <div class="section-band"><h2 class="section-title">Technicals</h2></div>
+    <section class="grid" aria-label="Technical dashboard links">
+      <article class="card primary" data-module="00"><div class="primary-inner"><div><span class="tag">Strategy Hub</span><h2>Command Center</h2><p>PM decision layer for the Technicals stack: breadth overview, ETF-level breadth charts, ETF macro rotation, yield/credit, CFTC positioning, and VAMS momentum signals.</p><a class="button" href="Chief_Market_Strategist_Command_Center.html?v=20260531">Open Command Center</a></div><div class="matrix" aria-label="Command center inputs"><div><span>Inputs</span><b>6 technical decks</b></div><div><span>Output</span><b>PM decision memo</b></div><div><span>Lens</span><b>Technicals stack</b></div><div><span>Cadence</span><b>Weekly</b></div></div></div></article>
+      <article class="card" data-module="01"><span class="tag">Breadth</span><h2>Breadth Overview</h2><p>Market breadth overview, sector participation, internal health, damage, and trend confirmation.</p><a class="button" href="Breadth_Dashboard_Overview.html?v=20260529">Open Breadth Overview</a></article>
+      <article class="card" data-module="02"><span class="tag">Breadth</span><h2>Breadth Individual Charts</h2><p>A deeper ETF-level breadth library for drilling beneath the overview into underlying participation, trend health, damage, and leadership signals.</p><a class="button" href="Breadth_Dashboard_Individual_Charts.html?v=20260529">Open Individual Charts</a></article>
+      <article class="card" data-module="03"><span class="tag">ETF Map</span><h2>ETF Macro Technicals</h2><p>Cross-asset ETF trends, relative strength, themes, sectors, credit, commodities, and international sleeves.</p><a class="button" href="etf_macro_technical_chartdeck.html?v=20260529">Open ETF Deck</a></article>
+      <article class="card" data-module="04"><span class="tag">Rates</span><h2>Yield Curve</h2><p>Rates, curve shape, Fed-sensitive maturities, recession/expansion signals, and macro rate regime context.</p><a class="button" href="yield_curve_institutional_chartdeck.html?v=20260529">Open Rates Deck</a></article>
+      <article class="card" data-module="05"><span class="tag">Momentum</span><h2>Volatility Adjusted Momentum Signal (VAMS)</h2><p>Risk-adjusted momentum signal deck for tracking trend quality, volatility regime shifts, and momentum confirmation across markets.</p><a class="button" href="VAMS_Signal_Chartdeck.html?v=20260529">Open VAMS Deck</a></article>
+      <article class="card" data-module="06"><span class="tag">Positioning</span><h2>CFTC Positioning</h2><p>Futures positioning, trader category behavior, FX, energy, metals, crypto, volatility, and 2Y/5Y/10Y Treasury crowding for weekly macro risk review.</p><a class="button" href="CFTC_Positioning_Institutional_Chartdeck.html?v=20260529">Open Positioning Deck</a></article>
+    </section>
+    <div class="section-band"><h2 class="section-title">Macro</h2></div>
+    <section class="grid" aria-label="Macro dashboard links">
+      <article class="card" data-module="07"><span class="tag">Labor Cycle</span><h2>Labor Market</h2><p>Employment, unemployment, claims, wage pressure, and labor-cycle context for assessing growth risk, Fed sensitivity, and macro regime shifts.</p><a class="button" href="Labor_Market_Overview_Chartdeck.html?v=20260529">Open Labor Deck</a></article>
+      <article class="card" data-module="08"><span class="tag">Inflation Regime</span><h2>Inflation/Consumer Sentiment</h2><p>Inflation pressure, consumer expectations, household sentiment, purchasing-power stress, and price-regime context for macro allocation decisions.</p><a class="button" href="Inflation_Overview_Chartdeck.html?v=20260531">Open Inflation Deck</a></article>
+      <article class="card" data-module="09"><span class="tag">Fiscal Risk</span><h2>Fiscal Monitor</h2><p>Treasury supply, fiscal positioning, funding pressure, auction context, and policy-sensitive rate dynamics for monitoring sovereign-risk transmission.</p><a class="button" href="Treasury_Fiscal_Positioning_Chartdeck.html?v=20260529">Open Fiscal Monitor</a></article>
+      <article class="card" data-module="10"><span class="tag">Small Business</span><h2>NFIB Sentiment</h2><p>Small-business optimism, hiring plans, pricing pressure, capex intentions, credit conditions, and labor-market stress signals from the NFIB survey.</p><a class="button" href="NFIB_Sentiment_Chartdeck.html?v=20260602">Open NFIB Deck</a></article>
+    </section>
+    <footer>Apex Macro Research | Weekly cross-asset strategy dashboard</footer>
+    <section class="disclaimer" aria-label="Disclaimer"><h2>Disclaimer</h2><p>The information provided by Apex Macro LLC ("we," "us," or "our") on any platform, including but not limited to websites, reports, emails, newsletters, and presentations, is for general informational and educational purposes only. All information is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information.</p><p>None of the content offered by Apex Macro LLC constitutes financial advice, legal advice, or any other type of advice meant for your specific reliance for any purpose. Any use or reliance on our content is solely at your own risk and discretion. You should conduct your own research, review, analysis, and verification of our content before relying on them. Trading and investment in securities involves high risk and the possibility of losing some or all of the principal investment. It is crucial to seek advice from an independent financial advisor who is licensed to provide investment advice.</p><p>Our content is intended to be used and must be used for informational purposes only. It is very important to do your own analysis before making any investment based on your own personal circumstances. You should take independent financial advice from a professional in connection with, or independently research and verify, any information that you find on our platform and wish to rely upon, whether for the purpose of making an investment decision or otherwise.</p><p>This disclaimer has been created to expressly convey that Apex Macro LLC and its content creators are not providing financial advice through the dissemination of the information contained herein and are merely providing information and insights as a public service. Apex Macro LLC, its directors, employees, and agents will not be liable for any loss or damage of any nature arising in any way from the use of, or reliance on, the information provided or for any decision made on the basis of such information, including (without limitation) any loss of profit, business, contracts, revenues, or anticipated savings.</p><p>Terms of Use: This document is the property of Apex Macro LLC and is intended solely for the use of the recipient. It contains confidential and proprietary information and may not be reproduced, redistributed, or disclosed in whole or in part to any third party without the prior written consent of Apex Macro LLC. By accessing this document, you acknowledge that you have read and understood these terms and agree to be bound by them.</p></section>
+  </main>
 </body>
 </html>
