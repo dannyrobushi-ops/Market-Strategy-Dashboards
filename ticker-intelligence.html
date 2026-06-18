@@ -58,7 +58,7 @@
     <footer>Apex Macro Research | Ticker intelligence is generated from the current weekly dashboard stack.</footer>
   </main>
   <script>
-    const indexPath = 'Searchable%20Tickers/ticker_index.json';
+    const indexPath = 'Searchable%20Tickers%201/ticker_index.json';
     const reportEl = document.getElementById('report');
     const universeEl = document.getElementById('universe');
     const countEl = document.getElementById('universeCount');
@@ -69,6 +69,7 @@
     const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
     const scoreClass = value => !Number.isFinite(Number(value)) ? 'neutral' : Number(value) >= 60 ? 'good' : Number(value) < 40 ? 'bad' : 'neutral';
     const stateClass = state => String(state || '').toLowerCase().includes('conflict') ? 'conflict' : String(state || '').toLowerCase().includes('constructive') ? 'constructive' : 'neutral';
+    const encodePath = value => String(value || '').split('/').filter(Boolean).map(encodeURIComponent).join('/');
 
     function metric(label, value, klass = '') {
       return `<div class="metric"><span>${esc(label)}</span><b class="${klass}">${esc(value)}</b></div>`;
@@ -102,8 +103,9 @@
       reportEl.className = 'report visible';
       reportEl.innerHTML = '<div class="card loading">Loading report...</div>';
       try {
-        const dataFile = String(row.data_file || '').split('/').map(encodeURIComponent).join('/');
-        const response = await fetch(`Searchable%20Tickers/${dataFile}`, {cache: 'no-store'});
+        const dataFolder = encodePath(row.data_folder || 'Searchable Tickers 1');
+        const dataFile = encodePath(row.data_file || '');
+        const response = await fetch(`${dataFolder}/${dataFile}`, {cache: 'no-store'});
         if (!response.ok) throw new Error(`Missing data file: ${row.data_file}`);
         const data = await response.json();
         renderReport(data);
