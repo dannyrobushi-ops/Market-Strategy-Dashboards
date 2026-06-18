@@ -58,7 +58,11 @@
     <footer>Apex Macro Research | Ticker intelligence is generated from the current weekly dashboard stack.</footer>
   </main>
   <script>
-    const indexPath = 'Searchable%20Tickers%201/ticker_index.json';
+    const indexPaths = [
+      'Searchable%20Tickers%201/ticker_index.json',
+      'Searchable%20Tickers/Searchable%20Tickers%201/ticker_index.json'
+    ];
+    let tickerDataPrefix = '';
     const reportEl = document.getElementById('report');
     const universeEl = document.getElementById('universe');
     const countEl = document.getElementById('universeCount');
@@ -105,7 +109,7 @@
       try {
         const dataFolder = encodePath(row.data_folder || 'Searchable Tickers 1');
         const dataFile = encodePath(row.data_file || '');
-        const response = await fetch(`${dataFolder}/${dataFile}`, {cache: 'no-store'});
+        const response = await fetch(`${tickerDataPrefix}${dataFolder}/${dataFile}`, {cache: 'no-store'});
         if (!response.ok) throw new Error(`Missing data file: ${row.data_file}`);
         const data = await response.json();
         renderReport(data);
@@ -183,10 +187,20 @@
 
     async function init() {
       try {
-        const response = await fetch(indexPath, {cache: 'no-store'});
-        if (!response.ok) throw new Error('Ticker index not found.');
-        indexData = await response.json();
-        renderUniverse(indexData);
+        let lastError = null;
+        for (const indexPath of indexPaths) {
+          try {
+            const response = await fetch(indexPath, {cache: 'no-store'});
+            if (!response.ok) throw new Error('Ticker index not found.');
+            indexData = await response.json();
+            tickerDataPrefix = indexPath.includes('Searchable%20Tickers/Searchable%20Tickers%201/') ? 'Searchable%20Tickers/' : '';
+            renderUniverse(indexData);
+            return;
+          } catch (error) {
+            lastError = error;
+          }
+        }
+        throw lastError || new Error('Ticker index not found.');
       } catch (error) {
         universeEl.innerHTML = `<article class="card error"><h3>Ticker Data Unavailable</h3><p>${esc(error.message)}</p><p class="small">The ticker universe will appear after the latest weekly data is published.</p></article>`;
         countEl.textContent = 'Index missing';
