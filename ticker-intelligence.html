@@ -45,11 +45,11 @@
     <section class="masthead">
       <p class="eyebrow">Apex Macro Research</p>
       <h1>Ticker Intelligence</h1>
-      <p class="dek">A grouped ETF universe for drilling into current cross-deck ticker reads. Select a ticker below to populate the report without leaving the universe map.</p>
+      <p class="dek">ETF universe with current cross-deck ticker reads. Select a ticker below to populate its report.</p>
     </section>
     <section class="universe-card" aria-label="Ticker Universe">
       <div class="universe-head">
-        <div><h2>Ticker Universe</h2><p>Tickers are organized by Apex Macro group. Click any chip to populate a current report underneath the universe card.</p></div>
+        <div><h2>Ticker Universe</h2><p>Click any ticker to populate its current report underneath the universe card.</p></div>
         <span class="count-pill" id="universeCount">Loading universe</span>
       </div>
       <div id="universe" class="group-grid"><div class="loading">Loading ticker universe...</div></div>
@@ -109,7 +109,7 @@
         renderReport(data);
         reportEl.scrollIntoView({behavior: 'smooth', block: 'start'});
       } catch (error) {
-        reportEl.innerHTML = `<article class="card error"><h2>Report unavailable</h2><p>${esc(error.message)}</p><p class="small">Upload the latest Searchable Tickers folder and commit again.</p></article>`;
+        reportEl.innerHTML = `<article class="card error"><h2>Report unavailable</h2><p>${esc(error.message)}</p><p class="small">This ticker report will appear after the latest weekly data is published.</p></article>`;
       }
     }
 
@@ -186,7 +186,7 @@
         indexData = await response.json();
         renderUniverse(indexData);
       } catch (error) {
-        universeEl.innerHTML = `<article class="card error"><h3>Upload Needed</h3><p>${esc(error.message)}</p><p class="small">Drop the Searchable Tickers folder into GitHub after the CIO Missive run.</p></article>`;
+        universeEl.innerHTML = `<article class="card error"><h3>Ticker Data Unavailable</h3><p>${esc(error.message)}</p><p class="small">The ticker universe will appear after the latest weekly data is published.</p></article>`;
         countEl.textContent = 'Index missing';
       }
     }
