@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-18T13:40:12",
+  "generated_at": "2026-06-18T14:39:26",
   "ticker_count": 111,
   "tickers": [
     {
@@ -32,6 +32,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/AGG.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "AGG_Ticker_Intelligence.html"
     },
     {
@@ -64,6 +65,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/AIQ.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "AIQ_Ticker_Intelligence.html"
     },
     {
@@ -95,6 +97,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/ARKK.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "ARKK_Ticker_Intelligence.html"
     },
     {
@@ -126,6 +129,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/BKLN.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "BKLN_Ticker_Intelligence.html"
     },
     {
@@ -156,6 +160,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/BTC-USD.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "BTC-USD_Ticker_Intelligence.html"
     },
     {
@@ -186,6 +191,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/BUG.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "BUG_Ticker_Intelligence.html"
     },
     {
@@ -216,6 +222,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/CARZ.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "CARZ_Ticker_Intelligence.html"
     },
     {
@@ -246,6 +253,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/CLOU.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "CLOU_Ticker_Intelligence.html"
     },
     {
@@ -275,6 +283,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/COAL.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "COAL_Ticker_Intelligence.html"
     },
     {
@@ -305,6 +314,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/COPX.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "COPX_Ticker_Intelligence.html"
     },
     {
@@ -335,6 +345,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/CPER.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "CPER_Ticker_Intelligence.html"
     },
     {
@@ -365,6 +376,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/CRAK.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "CRAK_Ticker_Intelligence.html"
     },
     {
@@ -394,6 +406,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/CWB.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "CWB_Ticker_Intelligence.html"
     },
     {
@@ -424,6 +437,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/DBA.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "DBA_Ticker_Intelligence.html"
     },
     {
@@ -456,6 +470,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/DBB.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "DBB_Ticker_Intelligence.html"
     },
     {
@@ -485,6 +500,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/DBC.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "DBC_Ticker_Intelligence.html"
     },
     {
@@ -516,6 +532,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/DXJ.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "DXJ_Ticker_Intelligence.html"
     },
     {
@@ -547,6 +564,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/EEM.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "EEM_Ticker_Intelligence.html"
     },
     {
@@ -579,6 +597,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/EMB.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "EMB_Ticker_Intelligence.html"
     },
     {
@@ -611,6 +630,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/EMLC.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "EMLC_Ticker_Intelligence.html"
     },
     {
@@ -640,6 +660,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/EWA.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "EWA_Ticker_Intelligence.html"
     },
     {
@@ -671,6 +692,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/EWU.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "EWU_Ticker_Intelligence.html"
     },
     {
@@ -700,6 +722,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/EWZ.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "EWZ_Ticker_Intelligence.html"
     },
     {
@@ -729,6 +752,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/EZU.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "EZU_Ticker_Intelligence.html"
     },
     {
@@ -762,6 +786,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/FCG.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "FCG_Ticker_Intelligence.html"
     },
     {
@@ -794,6 +819,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/FXI.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "FXI_Ticker_Intelligence.html"
     },
     {
@@ -824,6 +850,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/GDX.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "GDX_Ticker_Intelligence.html"
     },
     {
@@ -855,6 +882,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/GDXJ.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "GDXJ_Ticker_Intelligence.html"
     },
     {
@@ -885,6 +913,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/GLD.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "GLD_Ticker_Intelligence.html"
     },
     {
@@ -916,6 +945,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/GRID.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "GRID_Ticker_Intelligence.html"
     },
     {
@@ -945,6 +975,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/GSG.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "GSG_Ticker_Intelligence.html"
     },
     {
@@ -976,6 +1007,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/HAP.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "HAP_Ticker_Intelligence.html"
     },
     {
@@ -1008,6 +1040,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/HERO.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "HERO_Ticker_Intelligence.html"
     },
     {
@@ -1039,6 +1072,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/HYG.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "HYG_Ticker_Intelligence.html"
     },
     {
@@ -1072,6 +1106,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/IAI.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "IAI_Ticker_Intelligence.html"
     },
     {
@@ -1103,6 +1138,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/IAK.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "IAK_Ticker_Intelligence.html"
     },
     {
@@ -1137,6 +1173,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/IBB.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "IBB_Ticker_Intelligence.html"
     },
     {
@@ -1169,6 +1206,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/IEF.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "IEF_Ticker_Intelligence.html"
     },
     {
@@ -1199,6 +1237,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/IGV.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "IGV_Ticker_Intelligence.html"
     },
     {
@@ -1230,6 +1269,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/IHE.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "IHE_Ticker_Intelligence.html"
     },
     {
@@ -1262,6 +1302,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/IHF.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "IHF_Ticker_Intelligence.html"
     },
     {
@@ -1295,6 +1336,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/IHI.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "IHI_Ticker_Intelligence.html"
     },
     {
@@ -1324,6 +1366,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/INDA.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "INDA_Ticker_Intelligence.html"
     },
     {
@@ -1356,6 +1399,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/ITA.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "ITA_Ticker_Intelligence.html"
     },
     {
@@ -1388,6 +1432,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/ITB.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "ITB_Ticker_Intelligence.html"
     },
     {
@@ -1418,6 +1463,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/IWD.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "IWD_Ticker_Intelligence.html"
     },
     {
@@ -1448,6 +1494,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/IWF.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "IWF_Ticker_Intelligence.html"
     },
     {
@@ -1480,6 +1527,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/IWM.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "IWM_Ticker_Intelligence.html"
     },
     {
@@ -1512,6 +1560,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/IYG.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "IYG_Ticker_Intelligence.html"
     },
     {
@@ -1542,6 +1591,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/JETS.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "JETS_Ticker_Intelligence.html"
     },
     {
@@ -1575,6 +1625,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/KRE.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "KRE_Ticker_Intelligence.html"
     },
     {
@@ -1605,6 +1656,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/LQD.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "LQD_Ticker_Intelligence.html"
     },
     {
@@ -1637,6 +1689,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/MAGS.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "MAGS_Ticker_Intelligence.html"
     },
     {
@@ -1666,6 +1719,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/MBB.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "MBB_Ticker_Intelligence.html"
     },
     {
@@ -1696,6 +1750,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/MTUM.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "MTUM_Ticker_Intelligence.html"
     },
     {
@@ -1726,6 +1781,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 1",
       "data_file": "ticker_data/NUKZ.json",
+      "report_folder": "Searchable Tickers 1",
       "report_file": "NUKZ_Ticker_Intelligence.html"
     },
     {
@@ -1759,6 +1815,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/NXTG.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "NXTG_Ticker_Intelligence.html"
     },
     {
@@ -1792,6 +1849,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/OEF.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "OEF_Ticker_Intelligence.html"
     },
     {
@@ -1824,6 +1882,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/OIH.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "OIH_Ticker_Intelligence.html"
     },
     {
@@ -1854,6 +1913,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/PALL.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "PALL_Ticker_Intelligence.html"
     },
     {
@@ -1883,6 +1943,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/PAVE.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "PAVE_Ticker_Intelligence.html"
     },
     {
@@ -1913,6 +1974,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/PEJ.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "PEJ_Ticker_Intelligence.html"
     },
     {
@@ -1942,6 +2004,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/PFF.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "PFF_Ticker_Intelligence.html"
     },
     {
@@ -1974,6 +2037,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/PINK.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "PINK_Ticker_Intelligence.html"
     },
     {
@@ -2004,6 +2068,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/PLTM.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "PLTM_Ticker_Intelligence.html"
     },
     {
@@ -2034,6 +2099,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/PNQI.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "PNQI_Ticker_Intelligence.html"
     },
     {
@@ -2067,6 +2133,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/PSP.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "PSP_Ticker_Intelligence.html"
     },
     {
@@ -2099,6 +2166,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/QQQ.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "QQQ_Ticker_Intelligence.html"
     },
     {
@@ -2131,6 +2199,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/QTUM.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "QTUM_Ticker_Intelligence.html"
     },
     {
@@ -2161,6 +2230,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/QUAL.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "QUAL_Ticker_Intelligence.html"
     },
     {
@@ -2191,6 +2261,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/ROBO.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "ROBO_Ticker_Intelligence.html"
     },
     {
@@ -2225,6 +2296,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/RSP.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "RSP_Ticker_Intelligence.html"
     },
     {
@@ -2257,6 +2329,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/SHY.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "SHY_Ticker_Intelligence.html"
     },
     {
@@ -2287,6 +2360,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/SIL.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "SIL_Ticker_Intelligence.html"
     },
     {
@@ -2318,6 +2392,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/SILJ.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "SILJ_Ticker_Intelligence.html"
     },
     {
@@ -2348,6 +2423,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/SLV.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "SLV_Ticker_Intelligence.html"
     },
     {
@@ -2378,6 +2454,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/SMH.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "SMH_Ticker_Intelligence.html"
     },
     {
@@ -2410,6 +2487,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/SOCL.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "SOCL_Ticker_Intelligence.html"
     },
     {
@@ -2442,6 +2520,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/SPHB.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "SPHB_Ticker_Intelligence.html"
     },
     {
@@ -2476,6 +2555,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/SPHD.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "SPHD_Ticker_Intelligence.html"
     },
     {
@@ -2508,6 +2588,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/SPLV.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "SPLV_Ticker_Intelligence.html"
     },
     {
@@ -2542,6 +2623,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/SPXT.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "SPXT_Ticker_Intelligence.html"
     },
     {
@@ -2575,6 +2657,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/SPY.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "SPY_Ticker_Intelligence.html"
     },
     {
@@ -2606,6 +2689,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/STIP.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "STIP_Ticker_Intelligence.html"
     },
     {
@@ -2635,6 +2719,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/TIP.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "TIP_Ticker_Intelligence.html"
     },
     {
@@ -2666,6 +2751,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/TLT.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "TLT_Ticker_Intelligence.html"
     },
     {
@@ -2696,6 +2782,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/UFO.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "UFO_Ticker_Intelligence.html"
     },
     {
@@ -2726,6 +2813,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/URA.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "URA_Ticker_Intelligence.html"
     },
     {
@@ -2756,6 +2844,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/URNM.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "URNM_Ticker_Intelligence.html"
     },
     {
@@ -2788,6 +2877,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/VO.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "VO_Ticker_Intelligence.html"
     },
     {
@@ -2817,6 +2907,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/WOOD.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "WOOD_Ticker_Intelligence.html"
     },
     {
@@ -2848,6 +2939,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XBI.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XBI_Ticker_Intelligence.html"
     },
     {
@@ -2880,6 +2972,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XES.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XES_Ticker_Intelligence.html"
     },
     {
@@ -2909,6 +3002,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XHB.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XHB_Ticker_Intelligence.html"
     },
     {
@@ -2938,6 +3032,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XLB.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XLB_Ticker_Intelligence.html"
     },
     {
@@ -2969,6 +3064,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XLC.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XLC_Ticker_Intelligence.html"
     },
     {
@@ -2998,6 +3094,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XLE.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XLE_Ticker_Intelligence.html"
     },
     {
@@ -3027,6 +3124,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XLF.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XLF_Ticker_Intelligence.html"
     },
     {
@@ -3059,6 +3157,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XLG.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XLG_Ticker_Intelligence.html"
     },
     {
@@ -3088,6 +3187,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XLI.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XLI_Ticker_Intelligence.html"
     },
     {
@@ -3118,6 +3218,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XLK.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XLK_Ticker_Intelligence.html"
     },
     {
@@ -3149,6 +3250,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XLP.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XLP_Ticker_Intelligence.html"
     },
     {
@@ -3180,6 +3282,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XLRE.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XLRE_Ticker_Intelligence.html"
     },
     {
@@ -3209,6 +3312,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XLU.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XLU_Ticker_Intelligence.html"
     },
     {
@@ -3240,6 +3344,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XLV.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XLV_Ticker_Intelligence.html"
     },
     {
@@ -3271,6 +3376,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XLY.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XLY_Ticker_Intelligence.html"
     },
     {
@@ -3304,6 +3410,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XMAG.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XMAG_Ticker_Intelligence.html"
     },
     {
@@ -3334,6 +3441,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XME.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XME_Ticker_Intelligence.html"
     },
     {
@@ -3367,6 +3475,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XOP.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XOP_Ticker_Intelligence.html"
     },
     {
@@ -3397,6 +3506,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XTL.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XTL_Ticker_Intelligence.html"
     },
     {
@@ -3427,6 +3537,7 @@
       "macro_quintile": 2,
       "data_folder": "Searchable Tickers 2",
       "data_file": "ticker_data/XTN.json",
+      "report_folder": "Searchable Tickers 2",
       "report_file": "XTN_Ticker_Intelligence.html"
     }
   ],
@@ -3465,6 +3576,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/SPY.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "SPY_Ticker_Intelligence.html"
         },
         {
@@ -3497,6 +3609,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/QQQ.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "QQQ_Ticker_Intelligence.html"
         },
         {
@@ -3529,6 +3642,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/IWM.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "IWM_Ticker_Intelligence.html"
         },
         {
@@ -3562,6 +3676,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/OEF.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "OEF_Ticker_Intelligence.html"
         },
         {
@@ -3596,6 +3711,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/RSP.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "RSP_Ticker_Intelligence.html"
         },
         {
@@ -3628,6 +3744,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XLG.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XLG_Ticker_Intelligence.html"
         }
       ]
@@ -3663,6 +3780,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XLK.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XLK_Ticker_Intelligence.html"
         },
         {
@@ -3693,6 +3811,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/SMH.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "SMH_Ticker_Intelligence.html"
         },
         {
@@ -3723,6 +3842,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/IGV.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "IGV_Ticker_Intelligence.html"
         },
         {
@@ -3753,6 +3873,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/CLOU.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "CLOU_Ticker_Intelligence.html"
         },
         {
@@ -3783,6 +3904,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/BUG.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "BUG_Ticker_Intelligence.html"
         },
         {
@@ -3814,6 +3936,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/GRID.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "GRID_Ticker_Intelligence.html"
         },
         {
@@ -3846,6 +3969,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/AIQ.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "AIQ_Ticker_Intelligence.html"
         },
         {
@@ -3878,6 +4002,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/QTUM.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "QTUM_Ticker_Intelligence.html"
         },
         {
@@ -3908,6 +4033,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/ROBO.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "ROBO_Ticker_Intelligence.html"
         },
         {
@@ -3941,6 +4067,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/NXTG.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "NXTG_Ticker_Intelligence.html"
         },
         {
@@ -3971,6 +4098,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/PNQI.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "PNQI_Ticker_Intelligence.html"
         }
       ]
@@ -4008,6 +4136,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/MAGS.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "MAGS_Ticker_Intelligence.html"
         },
         {
@@ -4041,6 +4170,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XMAG.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XMAG_Ticker_Intelligence.html"
         },
         {
@@ -4073,6 +4203,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/VO.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "VO_Ticker_Intelligence.html"
         },
         {
@@ -4103,6 +4234,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/IWF.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "IWF_Ticker_Intelligence.html"
         },
         {
@@ -4133,6 +4265,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/IWD.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "IWD_Ticker_Intelligence.html"
         },
         {
@@ -4167,6 +4300,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/SPXT.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "SPXT_Ticker_Intelligence.html"
         }
       ]
@@ -4203,6 +4337,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XLY.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XLY_Ticker_Intelligence.html"
         },
         {
@@ -4234,6 +4369,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XLC.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XLC_Ticker_Intelligence.html"
         },
         {
@@ -4263,6 +4399,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XLE.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XLE_Ticker_Intelligence.html"
         },
         {
@@ -4292,6 +4429,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XLF.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XLF_Ticker_Intelligence.html"
         },
         {
@@ -4321,6 +4459,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XLI.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XLI_Ticker_Intelligence.html"
         },
         {
@@ -4350,6 +4489,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XLB.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XLB_Ticker_Intelligence.html"
         },
         {
@@ -4379,6 +4519,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XHB.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XHB_Ticker_Intelligence.html"
         }
       ]
@@ -4415,6 +4556,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XLP.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XLP_Ticker_Intelligence.html"
         },
         {
@@ -4446,6 +4588,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XLV.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XLV_Ticker_Intelligence.html"
         },
         {
@@ -4475,6 +4618,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XLU.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XLU_Ticker_Intelligence.html"
         },
         {
@@ -4506,6 +4650,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XLRE.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XLRE_Ticker_Intelligence.html"
         }
       ]
@@ -4542,6 +4687,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/STIP.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "STIP_Ticker_Intelligence.html"
         },
         {
@@ -4574,6 +4720,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/SHY.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "SHY_Ticker_Intelligence.html"
         },
         {
@@ -4603,6 +4750,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/TIP.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "TIP_Ticker_Intelligence.html"
         },
         {
@@ -4635,6 +4783,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/IEF.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "IEF_Ticker_Intelligence.html"
         },
         {
@@ -4666,6 +4815,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/TLT.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "TLT_Ticker_Intelligence.html"
         },
         {
@@ -4697,6 +4847,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/AGG.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "AGG_Ticker_Intelligence.html"
         },
         {
@@ -4726,6 +4877,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/CWB.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "CWB_Ticker_Intelligence.html"
         },
         {
@@ -4758,6 +4910,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/EMLC.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "EMLC_Ticker_Intelligence.html"
         },
         {
@@ -4790,6 +4943,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/EMB.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "EMB_Ticker_Intelligence.html"
         },
         {
@@ -4821,6 +4975,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/HYG.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "HYG_Ticker_Intelligence.html"
         },
         {
@@ -4851,6 +5006,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/LQD.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "LQD_Ticker_Intelligence.html"
         },
         {
@@ -4882,6 +5038,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/BKLN.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "BKLN_Ticker_Intelligence.html"
         },
         {
@@ -4911,6 +5068,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/MBB.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "MBB_Ticker_Intelligence.html"
         },
         {
@@ -4940,6 +5098,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/PFF.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "PFF_Ticker_Intelligence.html"
         }
       ]
@@ -4975,6 +5134,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/DBA.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "DBA_Ticker_Intelligence.html"
         },
         {
@@ -5007,6 +5167,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/DBB.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "DBB_Ticker_Intelligence.html"
         },
         {
@@ -5037,6 +5198,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/BTC-USD.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "BTC-USD_Ticker_Intelligence.html"
         },
         {
@@ -5066,6 +5228,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/DBC.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "DBC_Ticker_Intelligence.html"
         },
         {
@@ -5095,6 +5258,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/GSG.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "GSG_Ticker_Intelligence.html"
         },
         {
@@ -5125,6 +5289,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/GLD.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "GLD_Ticker_Intelligence.html"
         },
         {
@@ -5155,6 +5320,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/SLV.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "SLV_Ticker_Intelligence.html"
         },
         {
@@ -5185,6 +5351,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/URA.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "URA_Ticker_Intelligence.html"
         },
         {
@@ -5215,6 +5382,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/PLTM.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "PLTM_Ticker_Intelligence.html"
         },
         {
@@ -5245,6 +5413,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/PALL.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "PALL_Ticker_Intelligence.html"
         },
         {
@@ -5275,6 +5444,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/CPER.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "CPER_Ticker_Intelligence.html"
         }
       ]
@@ -5312,6 +5482,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/SPHB.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "SPHB_Ticker_Intelligence.html"
         },
         {
@@ -5342,6 +5513,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/MTUM.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "MTUM_Ticker_Intelligence.html"
         },
         {
@@ -5372,6 +5544,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/QUAL.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "QUAL_Ticker_Intelligence.html"
         },
         {
@@ -5406,6 +5579,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/SPHD.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "SPHD_Ticker_Intelligence.html"
         },
         {
@@ -5438,6 +5612,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/SPLV.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "SPLV_Ticker_Intelligence.html"
         }
       ]
@@ -5475,6 +5650,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/PINK.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "PINK_Ticker_Intelligence.html"
         },
         {
@@ -5506,6 +5682,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/ARKK.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "ARKK_Ticker_Intelligence.html"
         },
         {
@@ -5536,6 +5713,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/UFO.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "UFO_Ticker_Intelligence.html"
         },
         {
@@ -5566,6 +5744,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/PEJ.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "PEJ_Ticker_Intelligence.html"
         }
       ]
@@ -5601,6 +5780,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XTL.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XTL_Ticker_Intelligence.html"
         },
         {
@@ -5633,6 +5813,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/SOCL.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "SOCL_Ticker_Intelligence.html"
         },
         {
@@ -5665,6 +5846,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/HERO.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "HERO_Ticker_Intelligence.html"
         },
         {
@@ -5697,6 +5879,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XES.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XES_Ticker_Intelligence.html"
         },
         {
@@ -5730,6 +5913,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XOP.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XOP_Ticker_Intelligence.html"
         },
         {
@@ -5762,6 +5946,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/OIH.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "OIH_Ticker_Intelligence.html"
         },
         {
@@ -5792,6 +5977,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/CRAK.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "CRAK_Ticker_Intelligence.html"
         },
         {
@@ -5825,6 +6011,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/FCG.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "FCG_Ticker_Intelligence.html"
         },
         {
@@ -5854,6 +6041,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/COAL.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "COAL_Ticker_Intelligence.html"
         },
         {
@@ -5884,6 +6072,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/NUKZ.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "NUKZ_Ticker_Intelligence.html"
         },
         {
@@ -5914,6 +6103,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/JETS.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "JETS_Ticker_Intelligence.html"
         },
         {
@@ -5943,6 +6133,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/PAVE.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "PAVE_Ticker_Intelligence.html"
         },
         {
@@ -5975,6 +6166,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/ITA.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "ITA_Ticker_Intelligence.html"
         },
         {
@@ -6005,6 +6197,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XTN.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XTN_Ticker_Intelligence.html"
         },
         {
@@ -6035,6 +6228,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/CARZ.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "CARZ_Ticker_Intelligence.html"
         },
         {
@@ -6067,6 +6261,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/ITB.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "ITB_Ticker_Intelligence.html"
         }
       ]
@@ -6105,6 +6300,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/KRE.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "KRE_Ticker_Intelligence.html"
         },
         {
@@ -6136,6 +6332,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/IAK.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "IAK_Ticker_Intelligence.html"
         },
         {
@@ -6169,6 +6366,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/PSP.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "PSP_Ticker_Intelligence.html"
         },
         {
@@ -6201,6 +6399,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/IYG.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "IYG_Ticker_Intelligence.html"
         },
         {
@@ -6234,6 +6433,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/IAI.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "IAI_Ticker_Intelligence.html"
         },
         {
@@ -6265,6 +6465,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XBI.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XBI_Ticker_Intelligence.html"
         },
         {
@@ -6299,6 +6500,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/IBB.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "IBB_Ticker_Intelligence.html"
         },
         {
@@ -6331,6 +6533,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/IHF.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "IHF_Ticker_Intelligence.html"
         },
         {
@@ -6364,6 +6567,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/IHI.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "IHI_Ticker_Intelligence.html"
         },
         {
@@ -6395,6 +6599,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/IHE.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "IHE_Ticker_Intelligence.html"
         }
       ]
@@ -6430,6 +6635,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/XME.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "XME_Ticker_Intelligence.html"
         },
         {
@@ -6460,6 +6666,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/COPX.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "COPX_Ticker_Intelligence.html"
         },
         {
@@ -6491,6 +6698,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/HAP.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "HAP_Ticker_Intelligence.html"
         },
         {
@@ -6520,6 +6728,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/WOOD.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "WOOD_Ticker_Intelligence.html"
         },
         {
@@ -6550,6 +6759,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/GDX.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "GDX_Ticker_Intelligence.html"
         },
         {
@@ -6581,6 +6791,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/GDXJ.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "GDXJ_Ticker_Intelligence.html"
         },
         {
@@ -6611,6 +6822,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/SIL.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "SIL_Ticker_Intelligence.html"
         },
         {
@@ -6642,6 +6854,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/SILJ.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "SILJ_Ticker_Intelligence.html"
         },
         {
@@ -6672,6 +6885,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 2",
           "data_file": "ticker_data/URNM.json",
+          "report_folder": "Searchable Tickers 2",
           "report_file": "URNM_Ticker_Intelligence.html"
         }
       ]
@@ -6706,6 +6920,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/EWA.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "EWA_Ticker_Intelligence.html"
         },
         {
@@ -6735,6 +6950,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/EWZ.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "EWZ_Ticker_Intelligence.html"
         },
         {
@@ -6767,6 +6983,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/FXI.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "FXI_Ticker_Intelligence.html"
         },
         {
@@ -6798,6 +7015,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/EEM.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "EEM_Ticker_Intelligence.html"
         },
         {
@@ -6827,6 +7045,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/EZU.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "EZU_Ticker_Intelligence.html"
         },
         {
@@ -6856,6 +7075,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/INDA.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "INDA_Ticker_Intelligence.html"
         },
         {
@@ -6887,6 +7107,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/DXJ.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "DXJ_Ticker_Intelligence.html"
         },
         {
@@ -6918,6 +7139,7 @@
           "macro_quintile": 2,
           "data_folder": "Searchable Tickers 1",
           "data_file": "ticker_data/EWU.json",
+          "report_folder": "Searchable Tickers 1",
           "report_file": "EWU_Ticker_Intelligence.html"
         }
       ]
