@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-06-18T14:39:26",
+  "generated_at": "2026-06-18T20:35:29",
   "ticker_count": 111,
   "tickers": [
     {
@@ -18,7 +18,7 @@
         "Rates",
         "Credit"
       ],
-      "action": "Underweight / avoid rallies",
+      "action": "Neutral / monitor for confirmation",
       "composite": 39.34659758965315,
       "agreement_score": 41.66666666666667,
       "technical_state": "Balanced",
@@ -83,7 +83,7 @@
         "Thematic",
         "Growth"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 46.513087889476786,
       "agreement_score": 41.66666666666667,
       "technical_state": "Balanced",
@@ -239,7 +239,7 @@
         "Tech",
         "Leadership"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 57.062940917107575,
       "agreement_score": 91.66666666666666,
       "technical_state": "Balanced",
@@ -269,7 +269,7 @@
         "Infrastructure",
         "Housing"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 43.76477664940927,
       "agreement_score": 70.0,
       "technical_state": "Balanced",
@@ -300,7 +300,7 @@
         "Miners",
         "Metals"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 61.25174162257496,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -331,7 +331,7 @@
         "Crypto",
         "USD"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 56.728554894179894,
       "agreement_score": 64.28571428571429,
       "technical_state": "Confirmed leadership",
@@ -362,7 +362,7 @@
         "Infrastructure",
         "Housing"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 42.72613903586125,
       "agreement_score": 58.333333333333336,
       "technical_state": "Balanced",
@@ -456,7 +456,7 @@
         "Crypto",
         "USD"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 54.67716784244562,
       "agreement_score": 41.66666666666667,
       "technical_state": "Balanced",
@@ -518,7 +518,7 @@
         "International",
         "Equity"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 55.07440476190476,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -583,7 +583,7 @@
         "Rates",
         "Credit"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Overweight / add on pullbacks",
       "composite": 49.717173721340394,
       "agreement_score": 70.0,
       "technical_state": "Balanced",
@@ -616,7 +616,7 @@
         "Rates",
         "Credit"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 45.16341122868901,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -646,7 +646,7 @@
         "International",
         "Equity"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 47.14142416225749,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -678,7 +678,7 @@
         "International",
         "Equity"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 43.24971340388007,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -931,7 +931,7 @@
         "Tech",
         "Leadership"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 54.204269547325104,
       "agreement_score": 41.66666666666667,
       "technical_state": "Balanced",
@@ -993,7 +993,7 @@
         "Metals",
         "Miners"
       ],
-      "action": "Underweight / avoid rallies",
+      "action": "Neutral / monitor for confirmation",
       "composite": 40.044069664903,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -1058,7 +1058,7 @@
         "Rates",
         "Credit"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral-positive / selective add",
       "composite": 48.61827496638553,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -1092,7 +1092,7 @@
         "Care",
         "Industries"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 59.54794973544974,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -1124,7 +1124,7 @@
         "Care",
         "Industries"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 55.57974537037037,
       "agreement_score": 78.57142857142857,
       "technical_state": "Balanced",
@@ -1159,7 +1159,7 @@
         "Care",
         "Industries"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 47.797214873603764,
       "agreement_score": 70.0,
       "technical_state": "Balanced",
@@ -1192,7 +1192,7 @@
         "Rates",
         "Credit"
       ],
-      "action": "Underweight / avoid rallies",
+      "action": "Neutral / monitor for confirmation",
       "composite": 41.904577651950845,
       "agreement_score": 35.714285714285715,
       "technical_state": "Downtrend / avoid rallies",
@@ -1255,7 +1255,7 @@
         "Care",
         "Industries"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 59.168937389770726,
       "agreement_score": 70.0,
       "technical_state": "Balanced",
@@ -1385,7 +1385,7 @@
         "Infrastructure",
         "Housing"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 47.17687389770723,
       "agreement_score": 70.0,
       "technical_state": "Balanced",
@@ -1418,7 +1418,7 @@
         "Infrastructure",
         "Housing"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral-positive / selective add",
       "composite": 49.392805702527916,
       "agreement_score": 75.0,
       "technical_state": "Balanced",
@@ -1480,7 +1480,7 @@
         "Market",
         "Structure"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral-positive / selective add",
       "composite": 50.88104791299236,
       "agreement_score": 58.333333333333336,
       "technical_state": "Balanced",
@@ -1546,7 +1546,7 @@
         "Care",
         "Industries"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 55.378755144032915,
       "agreement_score": 70.0,
       "technical_state": "Balanced",
@@ -1611,7 +1611,7 @@
         "Care",
         "Industries"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 55.083681901834076,
       "agreement_score": 81.25,
       "technical_state": "Balanced",
@@ -1642,7 +1642,7 @@
         "Credit",
         "Rates"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 46.11811899185087,
       "agreement_score": 43.75,
       "technical_state": "Balanced",
@@ -1675,7 +1675,7 @@
         "Market",
         "Structure"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 42.79224720752499,
       "agreement_score": 50.0,
       "technical_state": "Washed out / repair watch",
@@ -1705,7 +1705,7 @@
         "Rates",
         "Credit"
       ],
-      "action": "Underweight / avoid rallies",
+      "action": "Neutral / monitor for confirmation",
       "composite": 39.79727366255144,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -1736,7 +1736,7 @@
         "Risk",
         "Appetite"
       ],
-      "action": "Overweight / add on pullbacks",
+      "action": "High-conviction overweight / add",
       "composite": 73.26905496766608,
       "agreement_score": 75.0,
       "technical_state": "Confirmed leadership",
@@ -1835,7 +1835,7 @@
         "Index",
         "Beta"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 53.84900793650794,
       "agreement_score": 58.333333333333336,
       "technical_state": "Balanced",
@@ -1868,7 +1868,7 @@
         "Infrastructure",
         "Housing"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral-positive / selective add",
       "composite": 49.177520576131684,
       "agreement_score": 58.333333333333336,
       "technical_state": "Balanced",
@@ -1990,7 +1990,7 @@
         "Rates",
         "Credit"
       ],
-      "action": "Underweight / avoid rallies",
+      "action": "Neutral / monitor for confirmation",
       "composite": 41.697332451499115,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -2023,7 +2023,7 @@
         "Speculative",
         "Growth"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 55.59404027042916,
       "agreement_score": 75.0,
       "technical_state": "Confirmed leadership",
@@ -2152,7 +2152,7 @@
         "Index",
         "Beta"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 61.34475721237869,
       "agreement_score": 62.5,
       "technical_state": "Confirmed leadership",
@@ -2216,7 +2216,7 @@
         "Risk",
         "Appetite"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 60.79210023515579,
       "agreement_score": 75.0,
       "technical_state": "Confirmed leadership",
@@ -2247,7 +2247,7 @@
         "Tech",
         "Leadership"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 59.7814594356261,
       "agreement_score": 75.0,
       "technical_state": "Balanced",
@@ -2282,7 +2282,7 @@
         "Index",
         "Beta"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 59.15855459791149,
       "agreement_score": 71.42857142857143,
       "technical_state": "Balanced",
@@ -2315,7 +2315,7 @@
         "Rates",
         "Credit"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 45.395089285714285,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -2506,7 +2506,7 @@
         "Risk",
         "Appetite"
       ],
-      "action": "Overweight / add on pullbacks",
+      "action": "High-conviction overweight / add",
       "composite": 72.30615079365079,
       "agreement_score": 58.333333333333336,
       "technical_state": "Confirmed leadership",
@@ -2541,7 +2541,7 @@
         "Risk",
         "Appetite"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral-positive / selective add",
       "composite": 51.08292915931804,
       "agreement_score": 90.0,
       "technical_state": "Balanced",
@@ -2609,7 +2609,7 @@
         "Market",
         "Structure"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 46.47293503821282,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -2643,7 +2643,7 @@
         "Index",
         "Beta"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 57.456217694337795,
       "agreement_score": 62.5,
       "technical_state": "Balanced",
@@ -2737,7 +2737,7 @@
         "Rates",
         "Credit"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 45.10106488029755,
       "agreement_score": 50.0,
       "technical_state": "Downtrend / avoid rallies",
@@ -2768,7 +2768,7 @@
         "Speculative",
         "Growth"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 45.96176513815402,
       "agreement_score": 41.66666666666667,
       "technical_state": "Washed out / repair watch",
@@ -2863,7 +2863,7 @@
         "Market",
         "Structure"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 53.92617394179894,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -2925,7 +2925,7 @@
         "Care",
         "Industries"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 59.21834950029395,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -2958,7 +2958,7 @@
         "Infrastructure",
         "Housing"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 47.388572898295116,
       "agreement_score": 60.0,
       "technical_state": "Balanced",
@@ -2988,7 +2988,7 @@
         "Cyclical",
         "Sectors"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 56.776742287214006,
       "agreement_score": 68.75,
       "technical_state": "Balanced",
@@ -3018,7 +3018,7 @@
         "Cyclical",
         "Sectors"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 59.565465917156736,
       "agreement_score": 87.5,
       "technical_state": "Balanced",
@@ -3080,7 +3080,7 @@
         "Cyclical",
         "Sectors"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 42.8980342155161,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -3110,7 +3110,7 @@
         "Cyclical",
         "Sectors"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 53.76103228047673,
       "agreement_score": 62.5,
       "technical_state": "Balanced",
@@ -3143,7 +3143,7 @@
         "Index",
         "Beta"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral-positive / selective add",
       "composite": 48.171171369782485,
       "agreement_score": 41.66666666666667,
       "technical_state": "Washed out / repair watch",
@@ -3173,7 +3173,7 @@
         "Cyclical",
         "Sectors"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 55.67516920012107,
       "agreement_score": 62.5,
       "technical_state": "Balanced",
@@ -3236,7 +3236,7 @@
         "Defensive",
         "Sectors"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 59.17363142873409,
       "agreement_score": 87.5,
       "technical_state": "Balanced",
@@ -3268,7 +3268,7 @@
         "Defensive",
         "Sectors"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 60.94961867763021,
       "agreement_score": 75.0,
       "technical_state": "Balanced",
@@ -3298,7 +3298,7 @@
         "Defensive",
         "Sectors"
       ],
-      "action": "Neutral / wait for confirmation",
+      "action": "Neutral / monitor for confirmation",
       "composite": 43.454168876415714,
       "agreement_score": 56.25,
       "technical_state": "Balanced",
@@ -3330,7 +3330,7 @@
         "Defensive",
         "Sectors"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 54.63041990666551,
       "agreement_score": 87.5,
       "technical_state": "Balanced",
@@ -3427,7 +3427,7 @@
         "Mining",
         "Miners"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Overweight / add on pullbacks",
       "composite": 54.56435185185185,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -3492,7 +3492,7 @@
         "Infrastructure",
         "Housing"
       ],
-      "action": "Neutral-positive / hold",
+      "action": "Neutral-positive / selective add",
       "composite": 57.44230599647267,
       "agreement_score": 50.0,
       "technical_state": "Balanced",
@@ -3523,7 +3523,7 @@
         "Infrastructure",
         "Housing"
       ],
-      "action": "Overweight / add on pullbacks",
+      "action": "High-conviction overweight / add",
       "composite": 72.66323486184598,
       "agreement_score": 70.0,
       "technical_state": "Extended / chase risk",
@@ -3562,7 +3562,7 @@
             "Index",
             "Beta"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 57.456217694337795,
           "agreement_score": 62.5,
           "technical_state": "Balanced",
@@ -3595,7 +3595,7 @@
             "Index",
             "Beta"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 61.34475721237869,
           "agreement_score": 62.5,
           "technical_state": "Confirmed leadership",
@@ -3662,7 +3662,7 @@
             "Index",
             "Beta"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 53.84900793650794,
           "agreement_score": 58.333333333333336,
           "technical_state": "Balanced",
@@ -3697,7 +3697,7 @@
             "Index",
             "Beta"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 59.15855459791149,
           "agreement_score": 71.42857142857143,
           "technical_state": "Balanced",
@@ -3730,7 +3730,7 @@
             "Index",
             "Beta"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral-positive / selective add",
           "composite": 48.171171369782485,
           "agreement_score": 41.66666666666667,
           "technical_state": "Washed out / repair watch",
@@ -3859,7 +3859,7 @@
             "Tech",
             "Leadership"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 57.062940917107575,
           "agreement_score": 91.66666666666666,
           "technical_state": "Balanced",
@@ -3922,7 +3922,7 @@
             "Tech",
             "Leadership"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 54.204269547325104,
           "agreement_score": 41.66666666666667,
           "technical_state": "Balanced",
@@ -4019,7 +4019,7 @@
             "Tech",
             "Leadership"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 59.7814594356261,
           "agreement_score": 75.0,
           "technical_state": "Balanced",
@@ -4122,7 +4122,7 @@
             "Market",
             "Structure"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 42.79224720752499,
           "agreement_score": 50.0,
           "technical_state": "Washed out / repair watch",
@@ -4189,7 +4189,7 @@
             "Market",
             "Structure"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 53.92617394179894,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -4220,7 +4220,7 @@
             "Market",
             "Structure"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral-positive / selective add",
           "composite": 50.88104791299236,
           "agreement_score": 58.333333333333336,
           "technical_state": "Balanced",
@@ -4286,7 +4286,7 @@
             "Market",
             "Structure"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 46.47293503821282,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -4385,7 +4385,7 @@
             "Cyclical",
             "Sectors"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 42.8980342155161,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -4415,7 +4415,7 @@
             "Cyclical",
             "Sectors"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 53.76103228047673,
           "agreement_score": 62.5,
           "technical_state": "Balanced",
@@ -4445,7 +4445,7 @@
             "Cyclical",
             "Sectors"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 55.67516920012107,
           "agreement_score": 62.5,
           "technical_state": "Balanced",
@@ -4475,7 +4475,7 @@
             "Cyclical",
             "Sectors"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 59.565465917156736,
           "agreement_score": 87.5,
           "technical_state": "Balanced",
@@ -4505,7 +4505,7 @@
             "Cyclical",
             "Sectors"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 56.776742287214006,
           "agreement_score": 68.75,
           "technical_state": "Balanced",
@@ -4542,7 +4542,7 @@
             "Defensive",
             "Sectors"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 59.17363142873409,
           "agreement_score": 87.5,
           "technical_state": "Balanced",
@@ -4574,7 +4574,7 @@
             "Defensive",
             "Sectors"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 54.63041990666551,
           "agreement_score": 87.5,
           "technical_state": "Balanced",
@@ -4604,7 +4604,7 @@
             "Defensive",
             "Sectors"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 43.454168876415714,
           "agreement_score": 56.25,
           "technical_state": "Balanced",
@@ -4636,7 +4636,7 @@
             "Defensive",
             "Sectors"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 60.94961867763021,
           "agreement_score": 75.0,
           "technical_state": "Balanced",
@@ -4706,7 +4706,7 @@
             "Rates",
             "Credit"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 45.395089285714285,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -4769,7 +4769,7 @@
             "Rates",
             "Credit"
           ],
-          "action": "Underweight / avoid rallies",
+          "action": "Neutral / monitor for confirmation",
           "composite": 41.904577651950845,
           "agreement_score": 35.714285714285715,
           "technical_state": "Downtrend / avoid rallies",
@@ -4801,7 +4801,7 @@
             "Rates",
             "Credit"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 45.10106488029755,
           "agreement_score": 50.0,
           "technical_state": "Downtrend / avoid rallies",
@@ -4833,7 +4833,7 @@
             "Rates",
             "Credit"
           ],
-          "action": "Underweight / avoid rallies",
+          "action": "Neutral / monitor for confirmation",
           "composite": 39.34659758965315,
           "agreement_score": 41.66666666666667,
           "technical_state": "Balanced",
@@ -4896,7 +4896,7 @@
             "Rates",
             "Credit"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 45.16341122868901,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -4929,7 +4929,7 @@
             "Rates",
             "Credit"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Overweight / add on pullbacks",
           "composite": 49.717173721340394,
           "agreement_score": 70.0,
           "technical_state": "Balanced",
@@ -4961,7 +4961,7 @@
             "Rates",
             "Credit"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral-positive / selective add",
           "composite": 48.61827496638553,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -4992,7 +4992,7 @@
             "Credit",
             "Rates"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 46.11811899185087,
           "agreement_score": 43.75,
           "technical_state": "Balanced",
@@ -5054,7 +5054,7 @@
             "Rates",
             "Credit"
           ],
-          "action": "Underweight / avoid rallies",
+          "action": "Neutral / monitor for confirmation",
           "composite": 39.79727366255144,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -5084,7 +5084,7 @@
             "Rates",
             "Credit"
           ],
-          "action": "Underweight / avoid rallies",
+          "action": "Neutral / monitor for confirmation",
           "composite": 41.697332451499115,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -5153,7 +5153,7 @@
             "Crypto",
             "USD"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 54.67716784244562,
           "agreement_score": 41.66666666666667,
           "technical_state": "Balanced",
@@ -5430,7 +5430,7 @@
             "Crypto",
             "USD"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 56.728554894179894,
           "agreement_score": 64.28571428571429,
           "technical_state": "Confirmed leadership",
@@ -5468,7 +5468,7 @@
             "Risk",
             "Appetite"
           ],
-          "action": "Overweight / add on pullbacks",
+          "action": "High-conviction overweight / add",
           "composite": 72.30615079365079,
           "agreement_score": 58.333333333333336,
           "technical_state": "Confirmed leadership",
@@ -5499,7 +5499,7 @@
             "Risk",
             "Appetite"
           ],
-          "action": "Overweight / add on pullbacks",
+          "action": "High-conviction overweight / add",
           "composite": 73.26905496766608,
           "agreement_score": 75.0,
           "technical_state": "Confirmed leadership",
@@ -5530,7 +5530,7 @@
             "Risk",
             "Appetite"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 60.79210023515579,
           "agreement_score": 75.0,
           "technical_state": "Confirmed leadership",
@@ -5565,7 +5565,7 @@
             "Risk",
             "Appetite"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral-positive / selective add",
           "composite": 51.08292915931804,
           "agreement_score": 90.0,
           "technical_state": "Balanced",
@@ -5636,7 +5636,7 @@
             "Speculative",
             "Growth"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 55.59404027042916,
           "agreement_score": 75.0,
           "technical_state": "Confirmed leadership",
@@ -5668,7 +5668,7 @@
             "Thematic",
             "Growth"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 46.513087889476786,
           "agreement_score": 41.66666666666667,
           "technical_state": "Balanced",
@@ -5699,7 +5699,7 @@
             "Speculative",
             "Growth"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 45.96176513815402,
           "agreement_score": 41.66666666666667,
           "technical_state": "Washed out / repair watch",
@@ -5766,7 +5766,7 @@
             "Infrastructure",
             "Housing"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 57.44230599647267,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -5865,7 +5865,7 @@
             "Infrastructure",
             "Housing"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 47.388572898295116,
           "agreement_score": 60.0,
           "technical_state": "Balanced",
@@ -5932,7 +5932,7 @@
             "Infrastructure",
             "Housing"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral-positive / selective add",
           "composite": 49.177520576131684,
           "agreement_score": 58.333333333333336,
           "technical_state": "Balanced",
@@ -5963,7 +5963,7 @@
             "Infrastructure",
             "Housing"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 42.72613903586125,
           "agreement_score": 58.333333333333336,
           "technical_state": "Balanced",
@@ -6027,7 +6027,7 @@
             "Infrastructure",
             "Housing"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 43.76477664940927,
           "agreement_score": 70.0,
           "technical_state": "Balanced",
@@ -6152,7 +6152,7 @@
             "Infrastructure",
             "Housing"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 47.17687389770723,
           "agreement_score": 70.0,
           "technical_state": "Balanced",
@@ -6183,7 +6183,7 @@
             "Infrastructure",
             "Housing"
           ],
-          "action": "Overweight / add on pullbacks",
+          "action": "High-conviction overweight / add",
           "composite": 72.66323486184598,
           "agreement_score": 70.0,
           "technical_state": "Extended / chase risk",
@@ -6247,7 +6247,7 @@
             "Infrastructure",
             "Housing"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral-positive / selective add",
           "composite": 49.392805702527916,
           "agreement_score": 75.0,
           "technical_state": "Balanced",
@@ -6286,7 +6286,7 @@
             "Care",
             "Industries"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 55.083681901834076,
           "agreement_score": 81.25,
           "technical_state": "Balanced",
@@ -6318,7 +6318,7 @@
             "Care",
             "Industries"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 55.57974537037037,
           "agreement_score": 78.57142857142857,
           "technical_state": "Balanced",
@@ -6385,7 +6385,7 @@
             "Care",
             "Industries"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 55.378755144032915,
           "agreement_score": 70.0,
           "technical_state": "Balanced",
@@ -6419,7 +6419,7 @@
             "Care",
             "Industries"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 59.54794973544974,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -6451,7 +6451,7 @@
             "Care",
             "Industries"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 59.21834950029395,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -6486,7 +6486,7 @@
             "Care",
             "Industries"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 47.797214873603764,
           "agreement_score": 70.0,
           "technical_state": "Balanced",
@@ -6585,7 +6585,7 @@
             "Care",
             "Industries"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 59.168937389770726,
           "agreement_score": 70.0,
           "technical_state": "Balanced",
@@ -6621,7 +6621,7 @@
             "Mining",
             "Miners"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 54.56435185185185,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -6652,7 +6652,7 @@
             "Miners",
             "Metals"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Overweight / add on pullbacks",
           "composite": 61.25174162257496,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -6684,7 +6684,7 @@
             "Metals",
             "Miners"
           ],
-          "action": "Underweight / avoid rallies",
+          "action": "Neutral / monitor for confirmation",
           "composite": 40.044069664903,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -6906,7 +6906,7 @@
             "International",
             "Equity"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 47.14142416225749,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -7093,7 +7093,7 @@
             "International",
             "Equity"
           ],
-          "action": "Neutral-positive / hold",
+          "action": "Neutral-positive / selective add",
           "composite": 55.07440476190476,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
@@ -7125,7 +7125,7 @@
             "International",
             "Equity"
           ],
-          "action": "Neutral / wait for confirmation",
+          "action": "Neutral / monitor for confirmation",
           "composite": 43.24971340388007,
           "agreement_score": 50.0,
           "technical_state": "Balanced",
