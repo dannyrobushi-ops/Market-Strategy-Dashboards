@@ -3,22 +3,649 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Apex Weekly Research Note</title>
+  <title>Reality is Catching Up | June 28th, 2026 | Apex Insights</title>
   <style>
-    :root{--cream:#f4ecdc;--paper:#fffaf0;--teal:#003f46;--gold:#b8872f;--ink:#173236;--muted:#61706d;--rule:#d8c7a9}
-    *{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#f4ecdc,#ddc599);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55;min-height:100vh;display:grid;place-items:center;padding:24px}
-    .card{max-width:860px;width:100%;background:var(--paper);border:1px solid var(--rule);border-top:6px solid var(--teal);box-shadow:0 22px 62px rgba(45,34,18,.18);padding:34px;border-radius:8px}
-    .tag{display:inline-block;color:var(--gold);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px}
-    h1{margin:0 0 12px;color:var(--teal);font-size:38px;line-height:1.05}
-    p{color:var(--muted);font-size:17px;margin:0 0 18px;max-width:720px}.button{display:inline-block;background:#123846;color:#fffaf0;text-decoration:none;padding:11px 14px;border-radius:5px;font-weight:800}
+    :root {
+      --cream: #f4ecdc;
+      --paper: #fffaf0;
+      --paper-strong: #fff6e7;
+      --teal: #003f46;
+      --teal-soft: #0a6267;
+      --gold: #b8872f;
+      --gold-soft: #e5d1a8;
+      --ink: #173236;
+      --muted: #61706d;
+      --rule: #d8c7a9;
+      --shadow: 0 18px 50px rgba(26, 38, 35, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "Aptos", "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    .page {
+      max-width: 1040px;
+      margin: 32px auto;
+      padding: 0 24px 48px;
+    }
+
+    .report {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      box-shadow: var(--shadow);
+    }
+
+    .masthead {
+      padding: 34px 44px 30px;
+      border-top: 7px solid var(--teal);
+      border-bottom: 1px solid var(--rule);
+      background: linear-gradient(180deg, #fffaf0 0%, #fbf1df 100%);
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 26px;
+    }
+
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-width: 0;
+    }
+
+    .brand-lockup img {
+      width: 92px;
+      height: 58px;
+      object-fit: cover;
+      border: 1px solid var(--rule);
+      background: white;
+    }
+
+    .brand-text {
+      text-transform: uppercase;
+      letter-spacing: 0;
+      color: var(--teal);
+      font-weight: 800;
+      font-size: 0.8rem;
+    }
+
+    .brand-sub {
+      color: var(--muted);
+      font-size: 0.86rem;
+      margin-top: 2px;
+    }
+
+    .report-date {
+      color: var(--teal);
+      font-weight: 700;
+      border-left: 3px solid var(--gold);
+      padding-left: 14px;
+      white-space: nowrap;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--teal);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 3.1rem;
+      line-height: 1.04;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .dek {
+      max-width: 760px;
+      margin: 18px 0 0;
+      color: #314b4d;
+      font-size: 1.02rem;
+    }
+
+    .summary-box {
+      margin: 30px 44px 8px;
+      padding: 22px 24px;
+      border: 1px solid var(--rule);
+      border-top: 4px solid var(--gold);
+      background: #fff7e8;
+    }
+
+    .summary-box h2 {
+      margin: 0 0 12px;
+      color: var(--teal);
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      font-family: "Aptos", "Segoe UI", Arial, sans-serif;
+    }
+
+    .summary-box ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .summary-box li {
+      margin: 8px 0;
+      padding-left: 3px;
+    }
+
+    .report-body {
+      padding: 12px 44px 44px;
+    }
+
+    .report-section {
+      padding-top: 34px;
+      margin-top: 30px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .report-section:first-child {
+      border-top: 0;
+      margin-top: 0;
+    }
+
+    .section-label {
+      display: inline-block;
+      margin-bottom: 9px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid var(--gold);
+      color: var(--gold);
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .report-section h2 {
+      margin: 0 0 18px;
+      color: var(--teal);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.75rem;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .report-section h3 {
+      margin: 22px 0 8px;
+      color: var(--teal);
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .report-section p {
+      max-width: 820px;
+      margin: 0 0 17px;
+    }
+
+    .report-section > p {
+      text-align: justify;
+      text-align-last: left;
+      text-justify: inter-word;
+      hyphens: auto;
+    }
+
+    .section-takeaway {
+      max-width: 820px;
+      margin: 0 0 22px;
+      padding: 16px 18px;
+      border: 1px solid var(--gold-soft);
+      border-left: 4px solid var(--gold);
+      background: #fbf1db;
+    }
+
+    .section-takeaway span {
+      display: block;
+      color: var(--teal);
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      margin-bottom: 4px;
+    }
+
+    .section-takeaway p {
+      margin: 0;
+      color: #2d4547;
+      font-weight: 650;
+      line-height: 1.5;
+    }
+
+    .figure-card {
+      margin: 30px 0 34px;
+      padding: 10px;
+      border: 1px solid var(--rule);
+      background: #fff8ea;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .figure-media {
+      background: #efe1ca;
+      border: 1px solid #e2cfad;
+      overflow: hidden;
+    }
+
+    .figure-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .figure-wide {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
+    figcaption {
+      margin: 12px 2px 2px;
+      padding: 0 2px;
+      color: #405759;
+      font-size: 0.86rem;
+      line-height: 1.48;
+    }
+
+    figcaption strong {
+      display: block;
+      color: var(--teal);
+      font-size: 0.94rem;
+      margin-bottom: 5px;
+    }
+
+    figcaption span {
+      display: block;
+      margin: 3px 0;
+    }
+
+    figcaption b {
+      color: var(--teal);
+    }
+
+    .legal-block {
+      margin-top: 12px;
+      padding: 20px 22px;
+      border: 1px solid var(--rule);
+      background: #fff7e8;
+    }
+
+    .report-section p.legal,
+    .legal-block p {
+      max-width: none;
+      color: #536260;
+      font-size: 0.82rem;
+      line-height: 1.48;
+      margin-bottom: 12px;
+    }
+
+    .footer-note {
+      padding: 18px 44px 28px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.78rem;
+      background: #fbf1df;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        margin: 0;
+        padding: 0;
+      }
+
+      .report {
+        border-left: 0;
+        border-right: 0;
+        box-shadow: none;
+      }
+
+      .masthead,
+      .report-body,
+      .summary-box,
+      .footer-note {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      .brand-row {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .report-date {
+        white-space: normal;
+      }
+
+      .figure-wide {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      h1 {
+        font-size: 2.25rem;
+      }
+    }
+
+    @media print {
+      @page {
+        size: Letter;
+        margin: 0.62in;
+      }
+
+      body {
+        background: white;
+        color: #10282c;
+        font-size: 11.4pt;
+        line-height: 1.55;
+      }
+
+      .page {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .report {
+        border: 0;
+        box-shadow: none;
+        background: white;
+      }
+
+      .masthead {
+        padding: 0 0 18pt;
+        background: white;
+      }
+
+      .summary-box,
+      .section-takeaway,
+      .figure-card,
+      .legal-block {
+        background: white;
+      }
+
+      .summary-box {
+        margin: 16pt 0 8pt;
+      }
+
+      .report-body {
+        padding: 0;
+      }
+
+      .report-section {
+        break-before: auto;
+        page-break-before: auto;
+        margin-top: 22pt;
+        padding-top: 20pt;
+      }
+
+      h1,
+      h2,
+      h3,
+      .section-label {
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+
+      p {
+        orphans: 3;
+        widows: 3;
+      }
+
+      .figure-card {
+        page-break-inside: avoid;
+        break-inside: avoid;
+        margin: 18pt 0 22pt;
+      }
+
+      .figure-wide {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      figcaption {
+        font-size: 8.8pt;
+      }
+
+      .footer-note {
+        padding: 14pt 0 0;
+        background: white;
+      }
+    }
   </style>
 </head>
 <body>
-  <main class="card">
-    <span class="tag">Latest Weekly Report</span>
-    <h1>Apex Weekly Research Note</h1>
-    <p>This is the stable latest-report slot for Apex Macro Research. Replace this file each week with the current exported HTML research note so the homepage button keeps working.</p>
-    <a class="button" href="../index.html">Back to Dashboard Suite</a>
+  <main class="page">
+    <article class="report">
+      <header class="masthead">
+        <div class="brand-row">
+          <div class="brand-lockup">
+            <img src="Reality is Catching Up_assets/03-image4.jpeg" alt="Apex Macro logo">
+            <div>
+              <div class="brand-text">Apex Insights</div>
+              <div class="brand-sub">from Danny Robushi</div>
+            </div>
+          </div>
+          <div class="report-date">June 28th, 2026</div>
+        </div>
+        <h1>Reality is Catching Up</h1>
+        <p class="dek">A written macro and markets research note on the stronger dollar, AI leadership rotation, oil and inflation dynamics, and crypto as a speculative-liquidity signal.</p>
+      </header>
+
+      <section class="summary-box" aria-labelledby="key-conclusions">
+        <h2 id="key-conclusions">Key Conclusions</h2>
+        <ul>
+          <li>Dollar strength is now the central macro variable: if momentum continues, global liquidity tightens and the broadening trade becomes more fragile.</li>
+<li>Market leadership is broadening beneath the surface, but mega-cap concentration means weakness in the largest AI leaders can still dominate headline index performance.</li>
+<li>The AI investment cycle remains powerful, yet cash-flow leadership is shifting away from the hyperscalers funding capex and toward the suppliers receiving it.</li>
+<li>Oil&#x27;s retreat reduces the near-term inflation shock, while low inventories, depleted SPR levels, and a thin savings cushion keep the macro setup more complicated.</li>
+<li>Crypto is increasingly acting as a clean liquidity barometer: oversold enough to be tactically interesting, but still constrained by the dollar, real yields, and tighter financial conditions.</li>
+        </ul>
+      </section>
+
+      <div class="report-body">
+        
+      <section class="report-section" id="dollar">
+        <div class="section-label">Macro liquidity</div>
+        <h2>Dollar Strength Is the Tightening Mechanism</h2>
+        
+          <div class="section-takeaway">
+            <span>Section takeaway</span>
+            <p>The dollar is the gating variable for whether the current rotation remains healthy or becomes a broader risk-off impulse.</p>
+          </div>
+        
+    <p>Since the June FOMC meeting, one of the most important developments across markets has been the sharp appreciation in the U.S. dollar. As markets rapidly repriced the probability of rate cuts during 2026, the dollar has rallied above the 101 level, reflecting both higher relative interest rates and tightening global financial conditions. While we believe market pricing has likely overshot in fully embracing the rate hike narrative, that distinction has mattered little for the dollar itself. The currency has continued strengthening as investors increasingly price a &quot;higher for longer&quot; policy regime.</p><p>The stronger dollar has already begun showing up across asset prices. Historically, the U.S. dollar maintains a negative correlation with most global equity sectors, commodities, precious metals, and cryptocurrencies such as Bitcoin. The reason is relatively straightforward. A stronger dollar tightens global financial conditions by increasing the cost of dollar-denominated funding, reducing global liquidity, pressuring commodity prices in local currency terms, and weighing on multinational earnings through translation effects. For emerging markets in particular, a stronger dollar also raises debt servicing costs and often contributes to capital outflows and currency depreciation.</p><p>The AI trade itself has also begun showing signs of fatigue. Concerns surrounding the extraordinary scale of hyperscaler capital expenditures are finally beginning to weigh on the largest technology companies. While AI spending continues supporting long-term earnings expectations, investors are beginning to question the magnitude of near-term returns on hundreds of billions of dollars in annual infrastructure investment. As a result, the hyperscalers have started correcting even as the broader market has become healthier beneath the surface.</p><p>Interestingly, this has produced the broadening we have been anticipating for several months. The Equal Weight S&amp;P 500 remains near its highs while Small Caps continue pushing to new highs, even as the capitalization-weighted S&amp;P 500 and Nasdaq have pulled back toward their respective 50-day moving averages. Rather than signaling outright market weakness, the recent correction has increasingly taken the form of sector rotation. Leadership has shifted away from the narrow AI infrastructure complex toward more cyclical and defensive areas of the market.</p><p>At first glance, the rotation into cyclical sectors appears somewhat counterintuitive given the backdrop of tighter financial conditions and slowing portions of the consumer economy. However, the manufacturing cycle continues strengthening, largely because of the unprecedented physical investment required to support AI infrastructure. Data centers require enormous quantities of steel, electrical equipment, transformers, cooling systems, networking hardware, construction labor, and industrial machinery. In other words, even as software and hyperscaler valuations begin consolidating, the downstream beneficiaries of that capex cycle continue supporting industrial and cyclical activity.</p><p>The challenge is that the strengthening dollar increasingly acts as a wrecking ball across many of those same risk assets if the trend continues. History suggests that once dollar momentum accelerates beyond certain thresholds, the tightening in global liquidity begins outweighing many of the underlying fundamental positives.</p><p>The current move in the dollar deserves attention for precisely that reason. The DXY has risen to roughly 101.4, up more than 5% from its late-January lows and approximately 3.5% over the last six months. More importantly, the velocity of the move has accelerated dramatically over the past several weeks. Daily gains approaching 1% represent some of the strongest upside momentum seen since the first quarter recovery, and the sustained break above the psychologically important 100 level historically marks an environment where global financial conditions tighten much more rapidly.</p><p>Markets have already begun responding. Since dollar momentum accelerated, the S&amp;P 500 has retreated from its early June highs while technology leadership has weakened. This relationship has been remarkably consistent over time. Rapid dollar appreciation compresses multinational earnings, tightens financial conditions globally, and increases discount rates across risk assets.</p><p>Emerging markets remain particularly vulnerable. Looking across more than a decade of data, months where the DXY rises more than 2% have historically been among the worst environments for emerging market equities. The current monthly move places the dollar within one of the strongest historical appreciation regimes, where emerging markets have posted negative returns nearly 90% of the time. The rolling correlation between year-over-year changes in the dollar and emerging market relative performance has also strengthened materially in recent years, highlighting just how sensitive global equities have become to dollar liquidity.</p><p>The historical analogues are also instructive. Previous episodes of comparable dollar strength, including 2014 and 2022, coincided with rising real yields, tighter financial conditions, weaker commodity prices, and significant underperformance across emerging markets. While history never repeats perfectly, the common thread across those periods was that stronger dollar momentum itself became an independent tightening mechanism regardless of domestic economic conditions.</p><p>There are several key thresholds worth monitoring from here. A sustained move above 102 on the DXY would likely intensify pressure across emerging market currencies, commodities, and multinational earnings. Likewise, if the monthly appreciation exceeds 3%, history suggests downside risks increase materially for global risk assets. Korea, Taiwan, Latin America, Southeast Asia, and portions of EMEA have historically exhibited the greatest sensitivity to dollar appreciation, while China and India have generally proven somewhat more resilient.</p><p>The nature of the dollar rally also matters. Dollar strength driven by stronger U.S. growth is typically less damaging than dollar strength driven by risk aversion and tightening liquidity. Unfortunately, the current environment increasingly reflects elements of both. The economy remains resilient enough to keep rates elevated while higher yields simultaneously tighten global financial conditions.</p><p>At the same time, structural capital flows continue providing an important offset. Rolling twelve-month TIC data shows foreign capital inflows into U.S. equities remain near multi-decade highs, reinforcing persistent demand for dollar-denominated assets and helping place a structural floor beneath the currency. Those inflows have been an important reason why the dollar has remained resilient despite growing concerns surrounding fiscal deficits and Treasury issuance.</p><p>However, positioning data suggests the move may be becoming crowded. Total speculative dollar positioning in futures markets has risen back toward multi-year highs. Historically, periods where positioning becomes this extended have often preceded at least temporary pullbacks in the dollar, even when the longer-term trend ultimately remained intact.</p><p>Taken together, the current environment presents a nuanced picture. Structurally, capital inflows, higher relative interest rates, and resilient economic growth continue supporting the dollar. Tactically, positioning has become increasingly stretched while markets have aggressively repriced policy expectations. That combination suggests the dollar can remain firm, but the probability of periodic countertrend pullbacks is increasing.</p><p>Ultimately, the direction of the dollar may become one of the most important variables determining whether the current market rotation evolves into a healthy broadening of leadership or transitions into a more meaningful risk-off environment. As long as dollar momentum continues accelerating, global liquidity remains under pressure. If the dollar stabilizes, however, the broadening underway beneath the surface has a much greater probability of evolving into a healthier and more sustainable bull market rather than simply another narrow AI-led advance.</p>
+        <figure class="figure-card">
+          <div class="figure-media">
+            <img src="Reality is Catching Up_assets/04-image5.png" alt="Rolling foreign equity inflows remain a structural dollar support." loading="lazy">
+          </div>
+          <figcaption>
+            <strong>Rolling foreign equity inflows remain a structural dollar support.</strong>
+            <span><b>What it shows:</b> Rolling 12-month U.S. equity capital inflows, which have surged to multi-decade highs.</span>
+            <span><b>Why it matters:</b> Persistent foreign demand for U.S. equities supports dollar-denominated assets and helps explain why the dollar has remained resilient even as positioning becomes stretched.</span>
+          </figcaption>
+        </figure>
+    
+        <figure class="figure-card">
+          <div class="figure-media">
+            <img src="Reality is Catching Up_assets/05-image6.png" alt="Speculative dollar positioning has moved back toward crowded territory." loading="lazy">
+          </div>
+          <figcaption>
+            <strong>Speculative dollar positioning has moved back toward crowded territory.</strong>
+            <span><b>What it shows:</b> DXY alongside net speculative USD futures positioning.</span>
+            <span><b>Why it matters:</b> Crowded positioning can raise the probability of countertrend pullbacks even when the broader dollar trend remains supported.</span>
+          </figcaption>
+        </figure>
+    
+        <figure class="figure-card">
+          <div class="figure-media">
+            <img src="Reality is Catching Up_assets/06-image7.png" alt="The dollar rally is tracking the repricing of higher-for-longer policy." loading="lazy">
+          </div>
+          <figcaption>
+            <strong>The dollar rally is tracking the repricing of higher-for-longer policy.</strong>
+            <span><b>What it shows:</b> DXY compared with the December 2026 Fed funds futures implied rate.</span>
+            <span><b>Why it matters:</b> As markets price a higher policy-rate path, relative-rate support for the dollar strengthens and global liquidity conditions tighten.</span>
+          </figcaption>
+        </figure>
+    </section>
+      <section class="report-section" id="ai-rotation">
+        <div class="section-label">Market structure</div>
+        <h2>AI Leadership Is Rotating Beneath the Surface</h2>
+        
+          <div class="section-takeaway">
+            <span>Section takeaway</span>
+            <p>The AI story remains intact, but leadership is shifting from the companies funding the buildout toward the suppliers capturing the spending.</p>
+          </div>
+        
+    <p>The Magnificent 7 have increasingly looked due for a pullback, and the concentration within the S&amp;P 500 has now reached levels that deserve much closer attention. Today, the largest 10% of stocks account for roughly 37% of the entire index. At concentration levels like these, rotation alone is often insufficient to prevent weakness in the headline index when the largest constituents begin correcting. Even if breadth improves underneath the surface, the sheer weight of the largest companies can overwhelm positive performance elsewhere.</p><p>That dynamic has become increasingly evident over the past month. Nvidia, Amazon, Apple, and Alphabet alone have collectively removed well over two percentage points from S&amp;P 500 performance, with Nvidia contributing roughly -0.74%, Amazon -0.54%, Apple -0.59%, and Alphabet -0.45%. While Small Caps and the Equal Weight S&amp;P 500 have continued outperforming, the capitalization-weighted indices have struggled because their largest constituents remain under pressure.</p><p>This also reflects the continued erosion in market leadership from the Magnificent 7 trade. The MAGS ETF recently closed at levels not seen above since last September despite the broader market remaining relatively resilient. That divergence reinforces the broadening theme we have discussed throughout this report. Leadership is no longer exclusively concentrated within the mega-cap technology complex.</p><p>One reason investors are becoming more cautious toward the hyperscalers is that the economics of the AI infrastructure buildout are beginning to change. Initially, markets rewarded virtually unlimited capital expenditure because the associated revenue opportunity appeared enormous. Increasingly, however, investors are beginning to focus on the long-term implications of those investments. Cash flow generation has deteriorated materially as annual capital expenditures have exploded higher, while depreciation expense and maintenance capex are likely to become increasingly meaningful drags on future earnings.</p><p>Competition within generative AI is also intensifying. Every major hyperscaler continues spending aggressively to defend its competitive position, reducing the likelihood that today&#x27;s extraordinary returns on capital remain sustainable indefinitely. At least this year, another meaningful contributor to reported earnings growth has come from &quot;other income,&quot; largely reflecting mark-to-market gains on strategic equity investments in companies such as Anthropic, OpenAI, and SpaceX. Those gains have helped support reported profitability, but they are not recurring operating earnings and should be viewed separately from the underlying economics of the core businesses.</p><p>The charts below illustrate this transition particularly well. Combined free cash flow across Microsoft, Alphabet, Amazon, Meta, and Oracle has collapsed into negative territory during 2026 as capital expenditures have accelerated dramatically. Meanwhile, annual hyperscaler capex has risen from roughly $70 billion in 2019 to well over $400 billion in 2025 and is expected to approach approximately $700 billion during 2026. These companies are effectively transforming from asset-light software businesses into some of the largest infrastructure builders in the world.</p><p>Ironically, the better trade has increasingly become selling what the hyperscalers are selling and buying what they are buying. Rather than owning the companies deploying hundreds of billions of dollars into AI infrastructure, investors have generally been better served owning the suppliers receiving those expenditures. Memory manufacturers have become perhaps the clearest example of that dynamic.</p><p>Micron has been one of the strongest performers throughout this cycle because AI infrastructure is proving extraordinarily memory intensive. Every new generation of AI models requires significantly greater DRAM and NAND capacity, creating structural demand that extends well beyond traditional PC and smartphone markets. Even Apple recently raised product prices by roughly 20%, with higher memory costs cited as one of the contributing factors.</p><p>Micron&#x27;s commentary reinforces how dramatically industry fundamentals have changed. Management now expects DRAM and NAND demand to continue significantly exceeding supply through at least calendar year 2027. They noted that the memory industry has been &quot;structurally transformed by the proliferation of AI&quot; and announced sixteen strategic customer agreements that fundamentally alter the company&#x27;s business model.</p><p>Those agreements are particularly important because they cannot simply be canceled. They are structured as take-or-pay contracts with multi-year volume commitments. Pricing is negotiated quarterly within predefined floors and ceilings, providing both customers and suppliers greater visibility while ensuring demand remains contractually supported. This represents a significant structural shift away from the highly cyclical memory industry investors have historically known.</p><p>Management also raised its outlook, expecting DRAM bit demand growth in calendar 2026 to reach the low-to-mid 20% range while NAND demand growth remains near 20%. These are exceptionally strong demand profiles for industries that historically experienced much more volatile cycles.</p><p>The profitability being generated is equally remarkable. Operating margins reached approximately 81%, while gross margins approached 85%, with management expecting gross margins to increase further during the current quarter. Those are extraordinary numbers by any historical standard, although they also highlight one of the valuation risks. Margins at these levels become increasingly difficult to expand further.</p><p>For that reason, traditional valuation metrics require additional context. Looking only at forward earnings multiples during periods of peak profitability often understates valuation risk because earnings themselves are temporarily inflated by exceptionally high margins. Price-to-sales ratios provide a cleaner framework in highly cyclical businesses.</p><p>On that basis, Micron currently trades near 10 times forward sales, approximately matching the peak valuation reached during the 2000 technology bubble.</p><p>The broader point is that the AI investment cycle has fundamentally redistributed cash flows across the technology ecosystem. Cash generation is increasingly moving away from the companies funding the infrastructure toward the companies supplying it. The hyperscalers continue deploying unprecedented amounts of capital, while suppliers of memory, networking equipment, electrical infrastructure, cooling systems, and power components increasingly capture the immediate economic benefits.</p><p>That shift also explains much of the rotation currently occurring beneath the surface of the market. While the Magnificent 7 continue absorbing the cash outflows associated with unprecedented capex, many of the companies selling into that investment cycle continue experiencing accelerating earnings, expanding margins, and improving free cash flow. The AI story remains intact. The leadership within that story, however, is continuing to evolve.</p>
+        <figure class="figure-card figure-wide">
+          <div class="figure-media">
+            <img src="Reality is Catching Up_assets/07-image8.png" alt="Hyperscaler capex has shifted from growth signal to cash-flow burden." loading="lazy">
+          </div>
+          <figcaption>
+            <strong>Hyperscaler capex has shifted from growth signal to cash-flow burden.</strong>
+            <span><b>What it shows:</b> Reported annual hyperscaler capex across Microsoft, Google, Amazon, Meta, and Oracle.</span>
+            <span><b>Why it matters:</b> The scale of AI infrastructure spending is transforming asset-light software leaders into major infrastructure builders, which changes how investors should evaluate returns and cash generation.</span>
+          </figcaption>
+        </figure>
+    
+        <figure class="figure-card figure-wide">
+          <div class="figure-media">
+            <img src="Reality is Catching Up_assets/08-image9.png" alt="Memory suppliers are capturing the cash-flow benefit of the AI buildout." loading="lazy">
+          </div>
+          <figcaption>
+            <strong>Memory suppliers are capturing the cash-flow benefit of the AI buildout.</strong>
+            <span><b>What it shows:</b> Theme free cash flow for Micron, Western Digital, and Seagate.</span>
+            <span><b>Why it matters:</b> The suppliers receiving AI infrastructure spending are showing stronger free cash flow than the hyperscalers funding the buildout.</span>
+          </figcaption>
+        </figure>
+    
+        <figure class="figure-card figure-wide">
+          <div class="figure-media">
+            <img src="Reality is Catching Up_assets/09-image10.png" alt="Hyperscaler free cash flow has rolled over as capex accelerates." loading="lazy">
+          </div>
+          <figcaption>
+            <strong>Hyperscaler free cash flow has rolled over as capex accelerates.</strong>
+            <span><b>What it shows:</b> Theme free cash flow for Microsoft, Google, Amazon, Meta, and Oracle.</span>
+            <span><b>Why it matters:</b> The deterioration reinforces the report&#x27;s argument that investors are scrutinizing the near-term returns on extraordinary AI infrastructure investment.</span>
+          </figcaption>
+        </figure>
+    </section>
+      <section class="report-section" id="oil">
+        <div class="section-label">Energy</div>
+        <h2>Oil Has Retreated, But the Inventory Backdrop Still Matters</h2>
+        
+          <div class="section-takeaway">
+            <span>Section takeaway</span>
+            <p>The decline in crude prices has eased the immediate inflation shock, while depleted commercial and strategic inventories leave future replenishment demand in place.</p>
+          </div>
+        
+    <p>Oil prices have now fallen sharply back into the $70s, a remarkable reversal considering how quickly markets priced in a prolonged supply shock only weeks ago. However, just after the market closed to end the week, the United States conducted another strike on Iranian targets, immediately raising questions about whether the recently announced ceasefire may prove to be yet another false start. From a geopolitical perspective, uncertainty remains extremely elevated even though the commodity market has become increasingly complacent.</p><p>Despite the renewed military escalation, the market has continued focusing on the reopening narrative and the expectation that energy flows will eventually normalize. As a result, crude prices have retraced nearly the entire geopolitical risk premium that developed following the closure of the Strait of Hormuz.</p><p>What makes the current setup particularly interesting, however, is that while oil prices have fallen sharply, inventories have also continued declining. Commercial crude inventories remain well below historical averages, while the Strategic Petroleum Reserve has also been drawn down considerably over recent weeks as policymakers attempted to offset supply disruptions and stabilize prices. In other words, the decline in oil prices has not been accompanied by a rebuilding of inventories. Instead, prices have fallen despite inventories becoming increasingly depleted.</p><p>That creates an important asymmetry looking forward. At some point, both commercial inventories and the Strategic Petroleum Reserve will need to be replenished. Those future purchases effectively represent latent demand that has simply been deferred rather than eliminated. As a result, even if geopolitical tensions continue easing, inventory rebuilding alone could place a floor underneath crude prices over the intermediate term.</p><p>From a broader macro perspective, the decline in oil prices has at least partially offset the tightening in financial conditions created by the stronger U.S. dollar and higher Treasury yields. Lower energy prices reduce inflation expectations, ease pressure on consumers, and provide modest relief to transportation and manufacturing costs. That dynamic has helped cushion what otherwise would have been an even more restrictive financial environment.</p><p>Technically, oil also appears increasingly washed out. With WTI now trading only a few dollars above where it stood before the Middle East conflict began, the 14-day Relative Strength Index has fallen to its lowest level since September 2020, when the global economy was still emerging from the pandemic recession. At the same time, the Daily Sentiment Index has fallen to just 12 on a 0-100 scale, indicating extremely bearish positioning among short-term traders.</p><p>That extreme pessimism is not isolated to crude. Gold and silver sentiment have also fallen to exceptionally depressed levels, while bullish positioning toward the U.S. dollar has surged, with the Daily Sentiment Index for the DXY reaching 83. Historically, these types of positioning extremes often precede meaningful countertrend reversals, even if the broader structural trend ultimately remains intact.</p><p>From our perspective, we continue to believe oil is likely to stabilize closer to the low-$80 range over time. The speed and magnitude of the recent decline have been surprising given the still-fragile geopolitical backdrop and ongoing inventory drawdowns. While prices may remain volatile in the near term, the combination of depleted inventories, eventual SPR replenishment, and structurally strong demand from the global economy argues against a sustained move materially below current levels absent a significant deterioration in global growth.</p><p>Fundamental data from the industry itself continues supporting that view. The latest Dallas Federal Reserve Energy Survey showed a significant acceleration in activity across the oil and gas sector during the second quarter. The survey&#x27;s broad business activity index jumped from 21.0 to 46.1, representing the strongest reading since the second quarter of 2022. Notably, the survey was conducted while negotiations surrounding a ceasefire were already underway, suggesting industry participants remained constructive despite expectations that hostilities could eventually ease.</p>
+        <figure class="figure-card">
+          <div class="figure-media">
+            <img src="Reality is Catching Up_assets/10-image11.png" alt="Commercial crude stocks are falling despite the oil price retreat." loading="lazy">
+          </div>
+          <figcaption>
+            <strong>Commercial crude stocks are falling despite the oil price retreat.</strong>
+            <span><b>What it shows:</b> Commercial crude inventory levels and week-over-week changes.</span>
+            <span><b>Why it matters:</b> Falling inventories create a tighter physical backdrop than price action alone suggests, limiting how bearish the energy signal should be interpreted.</span>
+          </figcaption>
+        </figure>
+    <p>Longer-term price expectations among industry executives also remain considerably higher than current spot prices. On average, respondents expect West Texas Intermediate crude to finish 2026 near $81 per barrel, with expectations remaining remarkably stable over longer horizons. The average forecast calls for approximately $78 oil two years from now and roughly $82 oil five years from now. In other words, those operating within the industry continue viewing current prices as below long-term equilibrium levels rather than representative of a new structural regime.</p>
+        <figure class="figure-card">
+          <div class="figure-media">
+            <img src="Reality is Catching Up_assets/11-image12.png" alt="SPR levels remain depleted and imply future replenishment demand." loading="lazy">
+          </div>
+          <figcaption>
+            <strong>SPR levels remain depleted and imply future replenishment demand.</strong>
+            <span><b>What it shows:</b> Strategic Petroleum Reserve crude stock levels and week-over-week changes.</span>
+            <span><b>Why it matters:</b> Future SPR rebuilds represent latent demand that can support crude over time even after the recent geopolitical premium fades.</span>
+          </figcaption>
+        </figure>
+    </section>
+      <section class="report-section" id="inflation-fed">
+        <div class="section-label">Policy and consumers</div>
+        <h2>Inflation Pressure Is Moderating, But the Consumer Cushion Is Thin</h2>
+        
+          <div class="section-takeaway">
+            <span>Section takeaway</span>
+            <p>If tighter financial conditions and lower oil prices do enough of the Fed&#x27;s work, additional hikes become less likely than markets briefly priced.</p>
+          </div>
+        
+    <p>The primary concern surrounding the economy during the Strait of Hormuz disruption was never simply the level of oil prices themselves. Rather, it was the downstream transmission of higher energy costs throughout the broader economy. Oil affects virtually every component of economic activity through transportation, manufacturing, logistics, chemicals, agriculture, utilities, and consumer spending. The risk was that a sustained energy shock would both reaccelerate inflation and materially erode household purchasing power, ultimately weighing on consumption, which remains roughly 70% of U.S. GDP.</p><p>Fortunately, that risk now appears to be moderating. Assuming oil prices do not stage another sharp move back above $100 per barrel, we believe inflation is likely approaching its peak for the year. Another sustained spike in crude would almost certainly generate another short-term acceleration in CPI through gasoline, transportation, and broader goods inflation. However, with oil now retracing back into the $70s, the inflation impulse should begin fading over the coming months.</p><p>That changing backdrop also has important implications for Federal Reserve policy. While markets recently shifted toward pricing rate hikes following the June FOMC meeting, we continue to believe the more likely outcome is an extended holding pattern rather than an outright tightening cycle. In our view, the Federal Reserve is using an intentionally hawkish communication strategy to allow financial markets themselves to tighten conditions. Higher Treasury yields, a stronger U.S. dollar, wider credit spreads, and tighter financial conditions all help slow demand without requiring additional policy tightening.</p><p>In effect, the market is doing part of the Federal Reserve&#x27;s job. If tighter financial conditions generated by higher yields and a stronger dollar are sufficient to bring inflation lower, the Committee has little incentive to actually raise rates further. That distinction is important because markets often confuse hawkish communication with an inevitable policy action. The two are not necessarily the same.</p><p>Recent inflation nowcasts also support the view that inflation pressures may begin easing as the energy shock rolls through the data. The Cleveland Fed&#x27;s inflation nowcast is currently projecting a negative month-over-month CPI reading for June. While these models are never perfect, they have generally done a good job capturing the directional trend in inflation over recent years. With energy prices now materially lower than they were throughout much of May, headline inflation should begin reflecting that improvement as the lagged effects work through the official data.</p><p>The Atlanta Fed&#x27;s GDPNow model tells a complementary story. Growth during the second quarter continues to slow modestly, driven primarily by softer consumer spending rather than a collapse in business investment. That is precisely what would be expected following a temporary energy price shock. Higher gasoline and utility costs reduce discretionary spending capacity, weighing on consumption while leaving the AI investment cycle largely intact.</p><p>The latest PCE report also reinforces that interpretation. During May, headline PCE increased 0.4% month over month and 4.1% year over year, while core PCE rose 0.3% during the month and 3.4% from a year earlier. Both figures were broadly in line with expectations and represented a modest acceleration from April&#x27;s readings of 3.8% and 3.3%, respectively.</p><p>As expected, energy remained the dominant contributor. Energy prices rose 4.0% during the month and 24% from a year earlier. Food prices increased 0.6% month over month and 2.4% year over year, while durable goods prices continued reaccelerating. Services inflation remained elevated at 3.8% year over year, highlighting that underlying inflation pressures remain firmer than policymakers would ultimately like to see.</p><p>However, one important caveat is that the May PCE report is already somewhat backward-looking. Oil prices have declined sharply throughout June, meaning much of the energy-driven inflation captured in the report no longer reflects current market conditions. As is typically the case, PCE largely confirmed what had already been signaled by the earlier CPI and PPI releases rather than providing major new information.</p><p>On the income side, the report was somewhat more encouraging. Personal income increased 0.7% month over month after being flat in April, while personal spending also rose 0.7%, broadly matching expectations after revisions to the previous month. That represents an improvement from the softer income trends discussed earlier in the report.</p><p>Nevertheless, the savings rate remains an important area to monitor. At 3.0%, the personal savings rate remains essentially unchanged from April and continues to sit near the lowest levels since mid-2022. As we have discussed previously, lower savings can reflect both positive wealth effects from rising asset prices and increasing financial strain as households draw down savings to offset higher living costs. The current environment likely reflects elements of both.</p>
+        <figure class="figure-card">
+          <div class="figure-media">
+            <img src="Reality is Catching Up_assets/12-image13.png" alt="The personal savings rate remains close to cycle lows." loading="lazy">
+          </div>
+          <figcaption>
+            <strong>The personal savings rate remains close to cycle lows.</strong>
+            <span><b>What it shows:</b> The U.S. personal saving rate since 2010.</span>
+            <span><b>Why it matters:</b> A low savings cushion makes the consumer more vulnerable as energy costs, higher yields, and tighter financial conditions pass through the economy.</span>
+          </figcaption>
+        </figure>
+    </section>
+      <section class="report-section" id="crypto">
+        <div class="section-label">Speculative liquidity</div>
+        <h2>Crypto Is Sending a Cleaner Liquidity Signal Than Equities</h2>
+        
+          <div class="section-takeaway">
+            <span>Section takeaway</span>
+            <p>Crypto breadth and Bitcoin drawdowns look washed out, but the macro backdrop remains the constraint until the dollar, real yields, or financial conditions turn easier.</p>
+          </div>
+        
+    <p>The risk asset story is beginning to develop some meaningful cracks beneath the surface, particularly outside of traditional equities. While the broad indices remain relatively resilient thanks to improving breadth and rotation into cyclicals, Bitcoin and the broader cryptocurrency complex continue signaling a much weaker liquidity backdrop than equity markets currently imply.</p><p>Bitcoin is now trading roughly 52% below its late-2025 peak, with total market capitalization approaching $1 trillion after reaching nearly $2.5 trillion at the height of the cycle. That magnitude of decline is difficult to dismiss as simple consolidation. Instead, it increasingly reflects a meaningful repricing of speculative assets as tighter financial conditions, higher real yields, and a stronger U.S. dollar continue draining liquidity from the most risk-sensitive parts of global markets.</p><p>Our proprietary crypto breadth measures reinforce that message. Using a universe of several dozen major digital assets, breadth has deteriorated to exceptionally weak levels. Currently, none of the assets within our universe are trading above their 50-day moving averages, while fewer than 10% remain above their 200-day moving averages. Historically, breadth readings this weak have coincided with periods where forced selling has largely run its course, but they also reflect an environment where investor participation and speculative appetite have almost completely disappeared.</p><p>Another important divergence has emerged through Bitcoin&#x27;s network fundamentals. The Bitcoin hash rate, which measures the total computational power securing the network, continues making new highs even as price has continued moving lower. Over long periods of time, hash rate and Bitcoin price have generally exhibited a strong positive relationship because both ultimately reflect growing network adoption and miner investment. Higher prices incentivize additional mining capacity, while greater computational investment reflects confidence that future Bitcoin economics justify continued capital deployment.</p><p>The current divergence is therefore unusual. Miners continue investing aggressively in hardware and expanding network capacity despite the significant decline in Bitcoin prices. That likely reflects several factors. First, many of the largest mining operators continue investing based on multi-year expectations rather than near-term price movements. Second, the rapid improvement in mining hardware efficiency has allowed many operators to remain profitable despite lower prices. Finally, AI-related demand for power infrastructure has created significant optionality for mining companies, many of which now possess valuable electrical capacity that can potentially be redirected toward data center and AI workloads if mining economics deteriorate further.</p><p>From a market perspective, however, the divergence tells us that price is currently being driven far more by liquidity conditions than by underlying network fundamentals. The stronger dollar, higher Treasury yields, tighter financial conditions, and reduced speculative positioning have overwhelmed what otherwise remain constructive long-term adoption trends.</p><p>The broader crypto ecosystem has also lost much of the excitement that characterized the prior cycle. In many respects, crypto now resembles the software sector discussed earlier in this report. Both were among the largest beneficiaries of abundant liquidity, low discount rates, and aggressive risk-taking. Both have subsequently experienced significant multiple compression as markets shifted toward companies with immediate earnings leverage to AI infrastructure spending rather than long-duration growth narratives.</p><p>Another important development is the gradual deterioration of the MicroStrategy financing model that played such a significant role during Bitcoin&#x27;s ascent. The strategy worked extraordinarily well during the bull market because MicroStrategy consistently traded at a substantial premium to the net asset value of its Bitcoin holdings. That premium allowed the company to repeatedly issue new equity at attractive valuations, raise cash, purchase additional Bitcoin, and further expand the size of its balance sheet.</p><p>At the same time, the company&#x27;s highly volatile equity created attractive opportunities within the convertible bond market. Investors could purchase convertible securities while simultaneously shorting the common stock, effectively creating delta-neutral positions that monetized the stock&#x27;s exceptionally high implied volatility. Those financing dynamics significantly lowered the effective cost of capital and enabled continued Bitcoin accumulation despite the company itself generating little operating cash flow.</p><p>That mechanism becomes considerably more difficult once the equity premium begins disappearing. As the gap between MicroStrategy&#x27;s market value and the net asset value of its Bitcoin holdings narrows, the ability to issue accretive equity diminishes. At the same time, lower volatility reduces the attractiveness of convertible arbitrage strategies, limiting another important source of financing demand. Eventually, the model transitions from one where rising equity prices finance additional Bitcoin purchases to one where debt servicing, refinancing, and liquidity management become increasingly important considerations.</p><p>That does not necessarily imply systemic risk for Bitcoin itself, but it does remove one of the important structural sources of incremental demand that helped amplify upside during the previous cycle.</p><p>Taken together, the crypto market increasingly appears washed out. Sentiment is depressed, breadth has collapsed, positioning has been largely unwound, and speculative enthusiasm has faded considerably. Historically, those conditions have often preceded important intermediate-term lows. However, from a macro perspective, crypto continues reflecting the same message as the stronger dollar, higher real yields, and tighter financial conditions: global liquidity remains considerably less supportive than headline equity indices alone would suggest.</p><p>In that sense, Bitcoin remains one of the more useful cross-asset barometers of speculative liquidity. While equities continue benefiting from AI-driven earnings growth and extraordinary capital expenditure, crypto has no comparable earnings offset. It therefore responds much more directly to changes in liquidity conditions. Until the dollar stabilizes, real yields begin easing, or financial conditions loosen more broadly, it is difficult to argue that the macro backdrop has become materially more supportive for the crypto ecosystem despite the increasingly oversold technical conditions.</p>
+        <figure class="figure-card">
+          <div class="figure-media">
+            <img src="Reality is Catching Up_assets/13-image14.png" alt="Bitcoin drawdowns are signaling pressure in speculative liquidity." loading="lazy">
+          </div>
+          <figcaption>
+            <strong>Bitcoin drawdowns are signaling pressure in speculative liquidity.</strong>
+            <span><b>What it shows:</b> Bitcoin&#x27;s drawdown from its rolling one-year high.</span>
+            <span><b>Why it matters:</b> The depth of the decline is difficult to dismiss as simple consolidation and points to weaker risk appetite outside traditional equities.</span>
+          </figcaption>
+        </figure>
+    
+        <figure class="figure-card">
+          <div class="figure-media">
+            <img src="Reality is Catching Up_assets/14-image15.png" alt="Bitcoin price has diverged from network hash rate." loading="lazy">
+          </div>
+          <figcaption>
+            <strong>Bitcoin price has diverged from network hash rate.</strong>
+            <span><b>What it shows:</b> Bitcoin price compared with Bitcoin network hash rate.</span>
+            <span><b>Why it matters:</b> The divergence suggests price is being driven more by liquidity and positioning than by underlying network investment.</span>
+          </figcaption>
+        </figure>
+    
+        <figure class="figure-card figure-wide">
+          <div class="figure-media">
+            <img src="Reality is Catching Up_assets/15-image16.png" alt="Crypto breadth has collapsed across both short- and long-term measures." loading="lazy">
+          </div>
+          <figcaption>
+            <strong>Crypto breadth has collapsed across both short- and long-term measures.</strong>
+            <span><b>What it shows:</b> The share of major crypto assets above their 50-day and 200-day moving averages.</span>
+            <span><b>Why it matters:</b> Breadth this weak often reflects forced selling and washed-out participation, but it also confirms that speculative appetite remains extremely depressed.</span>
+          </figcaption>
+        </figure>
+    </section>
+      <section class="report-section" id="disclosures">
+        <div class="section-label">Appendix</div>
+        <h2>Feedback &amp; Important Disclosures</h2>
+        
+    <div class="legal-block"><h3>We Appreciate Your Feedback!</h3><p class="legal">We highly value your feedback and earnestly invite you to contribute your insights regarding potential enhancements and suggestions for future content. We welcome all forms of constructive feedback and suggestions, as they are crucial in guiding our efforts to refine and develop our offerings. Please share your professional insights and recommendations through the link provided below. Your input is instrumental in shaping our direction and ensuring our services align with your expectations. We anticipate your contributions with great interest.</p><p class="legal">Contact | Apex Macro (apexmacroinsights.com)</p><h3>Important Disclosures</h3><p class="legal">The information provided by Apex Macro LLC (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) on any platform, including but not limited to websites, reports, emails, newsletters, and presentations, is for general informational and educational purposes only. All information is provided in good faith, however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information.</p><p class="legal">None of the content offered by Apex Macro LLC constitutes financial advice, legal advice, or any other type of advice meant for your specific reliance for any purpose. Any use or reliance on our content is solely at your own risk and discretion. You should conduct your own research, review, analysis, and verification of our content before relying on them. Trading and investment in securities involves high risk and the possibility of losing some or all of the principal investment. It is crucial to seek advice from an independent financial advisor who is licensed to provide investment advice.</p><p class="legal">Our content is intended to be used and must be used for informational purposes only. It is very important to do your own analysis before making any investment based on your own personal circumstances. You should take independent financial advice from a professional in connection with, or independently research and verify, any information that you find on our platform and wish to rely upon, whether for the purpose of making an investment decision or otherwise.</p><p class="legal">This disclaimer has been created to expressly convey that Apex Macro LLC and its content creators are not providing financial advice through the dissemination of the information contained herein and are merely providing information and insights as a public service. Apex Macro LLC, its directors, employees, and agents will not be liable for any loss or damage of any nature arising in any way from the use of, or reliance on, the information provided or for any decision made on the basis of such information, including (without limitation) any loss of profit, business, contracts, revenues, or anticipated savings.</p><p class="legal">Terms of Use: This document is the property of Apex Macro LLC and is intended solely for the use of the recipient. It contains confidential and proprietary information and may not be reproduced, redistributed, or disclosed in whole or in part to any third party without the prior written consent of Apex Macro LLC. By accessing this document, you acknowledge that you have read and understood these terms and agree to be bound by them.</p></div></section>
+      </div>
+
+      <footer class="footer-note">
+        Prepared as a standalone HTML research report with chart images preserved in sequence. Styling is self-contained for browser viewing and printer-friendly output.
+      </footer>
+    </article>
   </main>
 </body>
 </html>
