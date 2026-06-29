@@ -16,6 +16,8 @@
       --gold-2: #e2c98f;
       --line: #d8c7ab;
       --white: #fffaf0;
+      --text-col: 875px;
+      --chart-col: 1080px;
     }
     * { box-sizing: border-box; }
     html { background: var(--paper); color: var(--ink); }
@@ -75,8 +77,8 @@
       transform: rotate(-28deg);
     }
     h1 {
-      margin: 0;
-      max-width: 880px;
+      margin: 0 auto;
+      max-width: var(--text-col);
       color: var(--teal);
       font-family: Georgia, "Times New Roman", serif;
       font-size: clamp(42px, 7vw, 76px);
@@ -85,18 +87,19 @@
       font-weight: 700;
     }
     .dek {
-      margin: 18px 0 0;
+      margin: 18px auto 0;
       max-width: 860px;
       font-size: 20px;
       line-height: 1.5;
       color: #30484b;
     }
     .summary-box {
+      width: min(100%, var(--chart-col));
       border: 1px solid var(--line);
       border-left: 6px solid var(--gold);
       background: rgba(255, 250, 240, 0.76);
       padding: 18px 22px 18px;
-      margin: 24px 0 34px;
+      margin: 24px auto 34px;
     }
     .summary-box h2 {
       font-family: Arial, sans-serif;
@@ -123,6 +126,9 @@
       padding: 30px 0 34px;
     }
     .eyebrow {
+      max-width: var(--text-col);
+      margin-left: auto;
+      margin-right: auto;
       font-family: Arial, sans-serif;
       text-transform: uppercase;
       letter-spacing: 0.09em;
@@ -132,7 +138,8 @@
       margin-bottom: 9px;
     }
     h2 {
-      margin: 0 0 14px;
+      max-width: var(--text-col);
+      margin: 0 auto 14px;
       color: var(--teal);
       font-size: 30px;
       line-height: 1.08;
@@ -141,7 +148,7 @@
     }
     p {
       max-width: 875px;
-      margin: 0 0 15px;
+      margin: 0 auto 15px;
       font-size: 18px;
       line-height: 1.64;
       text-align: justify;
@@ -149,7 +156,7 @@
     }
     .callout {
       max-width: 880px;
-      margin: 22px 0 24px;
+      margin: 22px auto 24px;
       padding: 15px 18px;
       background: #f6eddc;
       border: 1px solid var(--line);
@@ -172,7 +179,8 @@
       line-height: 1.55;
     }
     .figure-block {
-      margin: 24px 0 4px;
+      width: min(100%, var(--chart-col));
+      margin: 24px auto 4px;
       background: var(--white);
       border: 1px solid var(--line);
       padding: 12px;
@@ -200,10 +208,11 @@
       color: var(--teal);
     }
     .bottom-line {
+      width: min(100%, var(--chart-col));
       background: var(--teal);
       color: #f9f1df;
       padding: 24px 26px;
-      margin: 8px 0 28px;
+      margin: 8px auto 28px;
       border-top: 4px solid var(--gold);
     }
     .bottom-line h2 {
@@ -216,7 +225,7 @@
     }
     .bottom-line p {
       color: #f7ead1;
-      max-width: none;
+      max-width: var(--text-col);
       font-size: 17px;
       line-height: 1.58;
     }
