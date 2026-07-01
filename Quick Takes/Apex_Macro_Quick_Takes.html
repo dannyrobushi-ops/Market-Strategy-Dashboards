@@ -7,126 +7,293 @@
   <style>
     :root {
       --paper: #fbf6ea;
-      --panel: #fffaf0;
+      --paper-2: #f4ead9;
+      --ink: #162f32;
+      --muted: #5d6d6f;
       --teal: #07383f;
       --teal-2: #315154;
       --gold: #c6a15b;
+      --gold-2: #e2c98f;
       --line: #d8c7ab;
-      --ink: #17373b;
-      --muted: #607073;
+      --white: #fffaf0;
       --red: #9d4a40;
+      --text-col: 875px;
+      --chart-col: 1080px;
     }
     * { box-sizing: border-box; }
+    html { background: var(--paper); color: var(--ink); scroll-behavior: smooth; }
     body {
       margin: 0;
       color: var(--ink);
-      background:
-        linear-gradient(rgba(198,161,91,.12) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(198,161,91,.10) 1px, transparent 1px),
-        var(--paper);
-      background-size: 32px 32px;
       font-family: Georgia, "Times New Roman", serif;
       line-height: 1.62;
+      background:
+        linear-gradient(90deg, rgba(7,56,63,0.045) 0, rgba(7,56,63,0.045) 1px, transparent 1px, transparent 100%),
+        var(--paper);
+      background-size: 28px 28px;
     }
-    .page { width: min(1120px, calc(100% - 42px)); margin: 0 auto; padding: 38px 0 58px; }
-    .masthead {
-      border: 1px solid var(--line);
-      border-left: 8px solid var(--gold);
-      background: rgba(255,250,240,.86);
-      padding: 24px 28px 22px;
-      margin-bottom: 28px;
+    .page {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 34px 0 56px;
     }
-    .brand { font: 800 13px/1.1 Arial, sans-serif; letter-spacing: .16em; text-transform: uppercase; color: var(--teal); }
-    h1 {
-      margin: 14px 0 10px;
-      font: 800 48px/1.03 Georgia, "Times New Roman", serif;
+    .masthead,
+    header.report-header {
+      width: min(100%, var(--chart-col));
+      margin: 0 auto 22px;
+      border-top: 5px solid var(--teal);
+      border-bottom: 1px solid var(--line);
+      padding: 28px 0 24px;
+      background: transparent;
+    }
+    .brand-row {
+      max-width: var(--text-col);
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: 12px;
+      color: var(--teal-2);
+      font-weight: 800;
+    }
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       color: var(--teal);
+    }
+    .mark {
+      width: 28px;
+      height: 28px;
+      border: 2px solid var(--teal);
+      border-radius: 50%;
+      position: relative;
+      flex: 0 0 auto;
+    }
+    .mark::after {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 2px;
+      background: var(--gold);
+      left: 5px;
+      top: 12px;
+      transform: rotate(-28deg);
+    }
+    .brand {
+      max-width: var(--text-col);
+      margin: 0 auto 12px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+    h1 {
+      max-width: var(--text-col);
+      margin: 0 auto;
+      color: var(--teal);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 6vw, 64px);
+      line-height: .97;
+      font-weight: 700;
       letter-spacing: 0;
     }
-    .dek { max-width: 860px; font-size: 19px; color: var(--teal-2); }
-    .date { margin-top: 16px; font: 700 12px/1 Arial, sans-serif; letter-spacing: .12em; color: var(--muted); text-transform: uppercase; }
-    .summary-box, .report-section, .references, .disclaimer {
-      width: min(980px, 100%);
-      margin: 0 auto 26px;
-      background: rgba(255,250,240,.82);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 24px 28px;
+    .dek {
+      max-width: var(--text-col);
+      margin: 14px auto 0;
+      font-size: 19px;
+      line-height: 1.55;
+      color: var(--teal-2);
     }
-    .summary-box { border-top: 4px solid var(--teal); }
+    .date {
+      max-width: var(--text-col);
+      margin: 16px auto 0;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .brand-row .date {
+      max-width: none;
+      margin: 0;
+      white-space: nowrap;
+    }
+    .summary-box {
+      width: min(100%, var(--chart-col));
+      margin: 24px auto 34px;
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--gold);
+      background: rgba(255,250,240,.76);
+      padding: 18px 22px;
+    }
     .summary-box h2, .references h2, .disclaimer h2 {
       margin: 0 0 13px;
-      font: 800 18px/1 Arial, sans-serif;
-      letter-spacing: .08em;
-      text-transform: uppercase;
       color: var(--teal);
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: .10em;
+      text-transform: uppercase;
     }
-    .summary-box ul { margin: 0; padding-left: 21px; }
-    .summary-box li { margin: 8px 0; }
+    .summary-box ul {
+      margin: 0;
+      padding-left: 20px;
+      columns: 2;
+      column-gap: 34px;
+    }
+    .summary-box li {
+      break-inside: avoid;
+      margin: 0 0 8px;
+    }
+    .report-section {
+      border-top: 1px solid var(--line);
+      padding: 30px 0 34px;
+      margin: 0;
+      background: transparent;
+    }
+    .report-section:first-of-type { border-top: 1px solid var(--line); }
     .eyebrow {
-      font: 800 12px/1 Arial, sans-serif;
+      display: block;
+      max-width: var(--text-col);
+      margin: 0 auto 8px;
       color: var(--gold);
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 800;
       letter-spacing: .14em;
       text-transform: uppercase;
-      margin-bottom: 8px;
     }
     h2 {
-      margin: 0 0 14px;
-      font: 800 27px/1.13 Arial, sans-serif;
+      max-width: var(--text-col);
+      margin: 0 auto 14px;
       color: var(--teal);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      line-height: 1.12;
+      font-weight: 700;
       letter-spacing: 0;
     }
-    p { margin: 0 0 16px; font-size: 17px; text-align: justify; text-justify: inter-word; }
+    p {
+      max-width: var(--text-col);
+      margin: 0 auto 15px;
+      font-size: 18px;
+      line-height: 1.64;
+      text-align: justify;
+      text-justify: inter-word;
+    }
     .callout {
+      max-width: var(--text-col);
+      margin: 20px auto 22px;
       border-left: 5px solid var(--gold);
-      background: rgba(7,56,63,.05);
-      padding: 15px 18px 1px;
-      margin: 20px 0 22px;
+      background: rgba(7,56,63,.045);
+      padding: 14px 18px 1px;
     }
-    .callout span { display:block; font:800 12px/1 Arial,sans-serif; letter-spacing:.12em; text-transform:uppercase; color:var(--teal); margin-bottom:7px; }
+    .callout span {
+      display: block;
+      margin: 0 0 7px;
+      color: var(--teal);
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .callout p { font-size: 16px; line-height: 1.55; }
     .figure-block {
-      margin: 26px auto 22px;
+      width: min(100%, var(--chart-col));
+      margin: 24px auto 4px;
+      background: var(--white);
       border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 14px 14px 13px;
-      background: rgba(255,253,247,.82);
+      padding: 12px;
     }
-    .figure-media { border: 1px solid rgba(216,199,171,.72); border-radius: 8px; overflow: hidden; background: #fbf6ea; }
-    .figure-media img { display: block; width: 100%; height: auto; }
+    .figure-media {
+      background: var(--paper);
+      border: 1px solid #e4d8c3;
+      overflow: hidden;
+    }
+    .figure-media img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
     figcaption {
-      border-top: 1px solid var(--line);
-      margin-top: 13px;
-      padding-top: 11px;
-      font: 14px/1.45 Arial, sans-serif;
-      color: #17373b;
+      margin: 10px 4px 2px;
+      padding: 0;
+      border: 0;
+      color: #3e5557;
+      font-family: Arial, sans-serif;
+      font-size: 13.5px;
+      line-height: 1.46;
     }
-    figcaption strong { color: var(--teal); }
-    .references, .disclaimer { font-family: Arial, sans-serif; }
+    figcaption strong {
+      display: inline;
+      color: var(--teal);
+      font-size: 13.5px;
+      margin: 0;
+    }
+    .references, .disclaimer {
+      width: min(100%, var(--chart-col));
+      margin: 0 auto 24px;
+      border-top: 1px solid var(--line);
+      padding: 18px 0 0;
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      background: transparent;
+    }
     .references ul { margin: 0; padding-left: 18px; }
     .references li { margin: 7px 0; font-size: 13px; line-height: 1.4; }
     .references a { color: var(--teal); text-decoration-color: var(--gold); }
-    .disclaimer p { font: 11px/1.45 Arial, sans-serif; color: #3f575a; text-align: left; margin-bottom: 9px; }
+    .disclaimer p {
+      max-width: var(--chart-col);
+      margin: 0 0 9px;
+      color: #3f575a;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      line-height: 1.45;
+      text-align: left;
+    }
     @media print {
-      body { background: #fffaf0; }
+      body { background: var(--white); }
       .page { width: 100%; padding: 0; }
-      .summary-box, .report-section, .references, .disclaimer, .masthead { break-inside: avoid; box-shadow: none; }
+      .masthead, .summary-box, .report-section, .figure-block, .references, .disclaimer { break-inside: avoid; box-shadow: none; }
       a { color: inherit; }
     }
     @media (max-width: 720px) {
       .page { width: min(100% - 24px, 1120px); padding-top: 20px; }
-      h1 { font-size: 37px; }
-      .summary-box, .report-section, .references, .disclaimer { padding: 20px 18px; }
-      p { text-align: left; }
+      .masthead { padding-top: 22px; }
+      .brand-row { align-items: flex-start; flex-direction: column; }
+      .brand-row .date { white-space: normal; }
+      h1 { font-size: 42px; line-height: .98; }
+      .dek { font-size: 18px; }
+      .summary-box ul { columns: 1; }
+      p { font-size: 16.5px; text-align: left; }
+      h2 { font-size: 26px; }
+      .figure-block { padding: 8px; }
     }
   </style>
 </head>
 <body>
   <main class="page">
-    <header class="masthead">
-      <div class="brand">Apex Macro Quick Takes</div>
+    <header class="masthead report-header">
+      <div class="brand-row">
+        <div class="brand-mark"><span class="mark" aria-hidden="true"></span><span>Apex Macro Quick Takes</span></div>
+        <div class="date">July 1, 2026</div>
+      </div>
       <h1>July Is Not a Free Pass</h1>
       <div class="dek">The calendar can help risk, but it does not remove the setup test. ISM still gives manufacturing enough growth permission for rotation, ADP keeps the labor debate open, and crowded upside in leadership means July has to broaden rather than simply chase.</div>
-      <div class="date">July 1, 2026</div>
     </header>
     <section class="summary-box">
       <h2>Key Conclusions</h2>
