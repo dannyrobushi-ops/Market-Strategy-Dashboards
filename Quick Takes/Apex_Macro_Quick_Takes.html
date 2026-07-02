@@ -11,12 +11,13 @@ body {
   margin: 0;
   color: #162f32;
   background:
-    linear-gradient(90deg, rgba(7,56,63,.055) 1px, transparent 1px) 0 0/31px 31px,
+    linear-gradient(90deg, rgba(7,56,63,0.045) 0, rgba(7,56,63,0.045) 1px, transparent 1px, transparent 100%),
     #fbf6ea;
+  background-size: 28px 28px;
   font-family: Georgia, 'Times New Roman', serif;
-  line-height: 1.58;
+  line-height: 1.62;
 }
-.page { width: min(1120px, calc(100% - 40px)); margin: 0 auto; padding: 34px 0 72px; }
+.page { width: min(1120px, calc(100% - 40px)); margin: 0 auto; padding: 34px 0 56px; }
 .masthead {
   width: min(100%, 1080px);
   margin: 0 auto 22px;
@@ -47,15 +48,7 @@ h1 { max-width: 875px; margin: 0 auto; color: #07383f; font-size: clamp(42px, 6v
   padding: 18px 22px;
   background: rgba(255,250,240,.76);
 }
-.footer-card {
-  width: min(860px, 100%);
-  margin: 0 auto 30px;
-  border-top: 4px solid #07383f;
-  border-bottom: 1px solid #d8c7ab;
-  padding: 22px 24px;
-  background: rgba(255,250,240,.68);
-}
-.summary-box h2, .footer-card h2 { margin: 0 0 13px; font: 800 15px/1 Arial, sans-serif; letter-spacing: .16em; text-transform: uppercase; color: #07383f; }
+.summary-box h2, .references h2, .disclaimer h2 { margin: 0 0 13px; font: 800 15px/1 Arial, sans-serif; letter-spacing: .10em; text-transform: uppercase; color: #07383f; }
 .summary-box ul { margin: 0; padding-left: 20px; columns: 2; column-gap: 34px; }
 .summary-box li { margin: 0 0 8px; break-inside: avoid; }
 .report-section {
@@ -120,6 +113,7 @@ p {
   border: 1px solid #e4d8c3;
   overflow: hidden;
 }
+.figure-media img { display: block; width: 100%; height: auto; }
 .apex-chart { display: block; width: 100%; height: auto; }
 .chart-title { font: 900 21px/1 Arial, sans-serif; fill: #07383f; letter-spacing: .5px; }
 .chart-subtitle, .chart-note { font: 700 13px/1.2 Arial, sans-serif; fill: #315154; }
@@ -129,12 +123,22 @@ p {
 .panel-title { font: 900 13px Arial, sans-serif; fill: #07383f; }
 figcaption { margin: 10px 4px 2px; padding: 0; border: 0; color: #3e5557; font: 13.5px/1.46 Arial, sans-serif; }
 figcaption strong { display: inline; color: #07383f; font-size: 13.5px; margin: 0; }
-.refs p, .disclaimer p { font: 13px/1.55 Arial, sans-serif; text-align: left; color: #315154; }
-.refs a { color: #07383f; text-decoration-color: #c6a15b; }
+.references, .disclaimer {
+  width: min(100%, 1080px);
+  margin: 0 auto 24px;
+  border-top: 1px solid #d8c7ab;
+  padding: 18px 0 0;
+  font-family: Arial, sans-serif;
+  color: #607073;
+  background: transparent;
+}
+.references p { max-width: 1080px; margin: 0 0 9px; color: #3f575a; font: 13px/1.55 Arial, sans-serif; text-align: left; }
+.references a { color: #07383f; text-decoration-color: #c6a15b; }
+.disclaimer p { max-width: 1080px; margin: 0 0 9px; color: #3f575a; font: 11px/1.45 Arial, sans-serif; text-align: left; }
 @media print {
   body { background: #fff; }
   .page { width: 100%; padding: 0; }
-  .masthead, .summary-box, .report-section, .figure-block, .footer-card { break-inside: avoid; box-shadow: none; }
+  .masthead, .summary-box, .report-section, .figure-block, .references, .disclaimer { break-inside: avoid; box-shadow: none; }
 }
 @media (max-width: 720px) {
   .page { width: min(100% - 24px, 1120px); padding-top: 20px; }
@@ -302,12 +306,12 @@ figcaption strong { display: inline; color: #07383f; font-size: 13.5px; margin: 
 <figcaption><strong>Figure 4. Wage Pressure Is Cooling With Lower Churn.</strong> Wage growth has cooled alongside lower labor churn, reducing one source of services-inflation pressure. The level is still firm enough to keep the policy debate data-dependent.</figcaption>
 </figure>
 </section>
-  <section class="footer-card refs">
+  <section class="references">
     <h2>References</h2>
     <p>BLS Employment Situation Summary, June 2026; BLS Job Openings and Labor Turnover Survey via FRED; Atlanta Fed Wage Growth Tracker; ADP National Employment Report, June 2026; Apex Macro Labor Market Overview Chartdeck; Apex Macro calculations.</p>
     <p><a href="https://www.bls.gov/news.release/empsit.nr0.htm">BLS Employment Situation Summary</a> | <a href="https://www.bls.gov/news.release/jolts.nr0.htm">BLS JOLTS</a> | <a href="https://www.atlantafed.org/chcs/wage-growth-tracker">Atlanta Fed Wage Growth Tracker</a> | <a href="https://www.adpemploymentreport.com/">ADP National Employment Report</a></p>
   </section>
-  <section class="footer-card disclaimer">
+  <section class="disclaimer">
     <h2>Disclaimer</h2>
     <p>The information provided by Apex Macro LLC ("we," "us," or "our") on any platform, including but not limited to websites, reports, emails, newsletters, and presentations, is for general informational and educational purposes only. All information is provided in good faith; however, we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability, or completeness of any information.</p>
     <p>None of the content offered by Apex Macro LLC constitutes financial advice, legal advice, or any other type of advice meant for your specific reliance for any purpose. Any use or reliance on our content is solely at your own risk and discretion. You should conduct your own research, review, analysis, and verification before relying on any content. Trading and investment in securities involves high risk and the possibility of losing some or all of the principal investment. You should seek advice from an independent financial advisor who is licensed to provide investment advice.</p>
