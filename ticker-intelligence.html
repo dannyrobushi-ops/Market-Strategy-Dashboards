@@ -63,6 +63,7 @@
       'Searchable%20Tickers%201/ticker_index.json',
       'Searchable%20Tickers/Searchable%20Tickers%201/ticker_index.json'
     ];
+    const retiredTickers = new Set(['BJK']);
     let tickerDataPrefix = '';
     const reportEl = document.getElementById('report');
     const universeEl = document.getElementById('universe');
@@ -75,6 +76,17 @@
     const scoreClass = value => !Number.isFinite(Number(value)) ? 'neutral' : Number(value) >= 60 ? 'good' : Number(value) < 40 ? 'bad' : 'neutral';
     const stateClass = state => String(state || '').toLowerCase().includes('conflict') ? 'conflict' : String(state || '').toLowerCase().includes('constructive') ? 'constructive' : 'neutral';
     const encodePath = value => String(value || '').split('/').filter(Boolean).map(encodeURIComponent).join('/');
+
+    function normalizeTickerIndex(data) {
+      const keepTicker = item => !retiredTickers.has(String(item?.ticker || '').toUpperCase());
+      const tickers = (data.tickers || []).filter(keepTicker);
+      const groups = (data.groups || []).map(group => ({
+        ...group,
+        tickers: (group.tickers || []).filter(keepTicker)
+      })).filter(group => group.tickers.length);
+      const tickerCount = tickers.length || groups.reduce((sum, group) => sum + group.tickers.length, 0);
+      return {...data, tickers, groups, ticker_count: tickerCount};
+    }
 
     function metric(label, value, klass = '') {
       return `<div class="metric"><span>${esc(label)}</span><b class="${klass}">${esc(value)}</b></div>`;
@@ -204,7 +216,7 @@
           try {
             const response = await fetch(indexPath, {cache: 'no-store'});
             if (!response.ok) throw new Error('Ticker index not found.');
-            indexData = await response.json();
+            indexData = normalizeTickerIndex(await response.json());
             tickerDataPrefix = indexPath.includes('Searchable%20Tickers/Searchable%20Tickers%201/') ? 'Searchable%20Tickers/' : '';
             renderUniverse(indexData);
             return;
