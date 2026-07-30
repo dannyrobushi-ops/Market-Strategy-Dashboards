@@ -32,6 +32,22 @@
     footer{position:relative;margin-top:34px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
     .report-shell{background:rgba(255,250,240,.96);border:1px solid var(--line);border-radius:8px;box-shadow:0 18px 44px rgba(96,72,38,.14);overflow:hidden}.report-toolbar{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 14px;border-bottom:1px solid var(--line-soft);background:linear-gradient(90deg,rgba(18,56,70,.10),rgba(185,135,61,.10))}.report-toolbar h2{font-size:18px;margin:0}.report-frame{display:block;width:100%;height:1200px;border:0;background:#fffaf0}
     @media(max-width:820px){main{padding:16px 14px 34px}.topbar,.universe-head{align-items:flex-start;flex-direction:column}.masthead{padding:22px 18px}h1{font-size:34px}.group-grid,.grid,.tri-grid,.metric-grid{grid-template-columns:1fr}.report-hero h2{font-size:28px}}
+  
+    /* Visual refinement layer: preserves typography and layout. */
+    :root{--terminal-shadow:rgba(49,37,20,.24);--terminal-glow:rgba(31,91,104,.15);--paper-glow:rgba(255,255,255,.72)}
+    body{background:radial-gradient(ellipse 82% 42% at 52% -10%,rgba(255,255,255,.34),transparent 58%),radial-gradient(ellipse at 78% -10%,rgba(255,250,240,.50),transparent 40%),radial-gradient(ellipse at 84% 0%,rgba(199,153,76,.38),transparent 36%),linear-gradient(135deg,#e9ddc6 0%,#d6c09a 50%,#c4a46e 100%);background-attachment:fixed}
+    body:before{background-image:linear-gradient(90deg,rgba(16,36,48,.085) 1px,transparent 1px),linear-gradient(90deg,rgba(185,135,61,.11) 1px,transparent 1px),linear-gradient(90deg,rgba(255,250,240,.24) 1px,transparent 1px),linear-gradient(180deg,rgba(255,255,255,.12) 1px,transparent 1px);background-size:28px 100%,112px 100%,7px 100%,100% 128px;opacity:.82}
+    body:after{background:linear-gradient(108deg,rgba(255,255,255,.10) 0%,transparent 26%,rgba(255,255,255,.04) 47%,transparent 64%),radial-gradient(circle at 16% 8%,rgba(31,91,104,.12),transparent 31%),radial-gradient(circle at 87% 6%,rgba(185,135,61,.20),transparent 30%),linear-gradient(180deg,rgba(255,250,240,.12),transparent 44%)}
+    .topbar,.universe-card,.group-card,.card,.report-shell{border-color:rgba(176,145,95,.86);box-shadow:0 18px 40px rgba(79,58,29,.16),0 2px 0 rgba(255,255,255,.64) inset,0 0 0 1px rgba(31,91,104,.025)}
+    .masthead{border-color:rgba(164,130,76,.88);box-shadow:0 30px 86px var(--terminal-shadow),0 2px 0 var(--paper-glow) inset,0 0 48px rgba(185,135,61,.08) inset}
+    .masthead:after{border-color:rgba(31,91,104,.28);box-shadow:0 0 0 8px rgba(255,250,240,.08),0 0 56px var(--terminal-glow)}
+    .universe-card{box-shadow:0 24px 58px rgba(69,51,26,.19),0 2px 0 rgba(255,255,255,.78) inset,0 0 46px rgba(31,91,104,.04) inset}
+    .group-card{border-color:rgba(190,161,112,.72);box-shadow:0 12px 30px rgba(87,65,35,.11),0 1px 0 rgba(255,255,255,.76) inset}
+    .ticker-chip,.button{box-shadow:0 12px 26px rgba(18,56,70,.23),0 1px 0 rgba(255,255,255,.18) inset,0 0 0 1px rgba(255,255,255,.07)}
+    .ticker-chip:hover,.ticker-chip.active,.button:hover{box-shadow:0 15px 30px rgba(18,56,70,.32),0 0 18px rgba(31,91,104,.18),0 1px 0 rgba(255,255,255,.22) inset}
+    .group-card:hover,.card:hover,.report-shell:hover{box-shadow:0 20px 46px rgba(69,51,26,.19),0 2px 0 rgba(255,255,255,.76) inset,0 0 38px rgba(31,91,104,.04) inset}
+    .report-toolbar{box-shadow:0 1px 0 rgba(255,255,255,.65) inset,0 12px 26px rgba(69,51,26,.08)}
+
   </style>
   <style>
     .nav-actions{position:relative;margin:-4px 0 12px;display:flex;justify-content:flex-start}
